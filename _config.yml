@@ -1,0 +1,12 @@
+title: "Seho Jeong"
+description: "Academic website"
+url: "https://jeong-seho.github.io"
+baseurl: ""
+
+markdown: kramdown
+
+nav:
+  - title: Home
+    url: /
+  - title: Research
+    url: /research/

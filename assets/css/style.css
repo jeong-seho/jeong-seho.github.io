@@ -1,0 +1,155 @@
+:root {
+    --text: #111;
+    --muted: #666;
+    --border: #ddd;
+    --bg: #fff;
+    --link: #111;
+    --max-width: 900px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    line-height: 1.65;
+}
+
+.site-header {
+    border-bottom: 1px solid var(--border);
+    background: #fff;
+}
+
+.nav-wrap {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 18px 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text);
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    gap: 22px;
+    font-size: 15px;
+}
+
+.nav a {
+    color: var(--muted);
+    text-decoration: none;
+}
+
+.nav a:hover,
+.nav a.active {
+    color: var(--text);
+    border-bottom: 1px solid var(--text);
+}
+
+.page {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 48px 22px 80px;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 36px;
+    align-items: start;
+    margin-bottom: 48px;
+}
+
+.profile {
+    width: 180px;
+    border-radius: 4px;
+}
+
+h1 {
+    font-size: 34px;
+    line-height: 1.2;
+    margin: 0 0 18px;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 44px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--border);
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 19px;
+    margin-bottom: 4px;
+}
+
+a {
+    color: var(--link);
+    text-underline-offset: 3px;
+}
+
+.small {
+    color: var(--muted);
+    font-size: 15px;
+}
+
+.paper {
+    margin-bottom: 28px;
+}
+
+.paper-title {
+    font-weight: 600;
+}
+
+.paper-meta {
+    color: var(--muted);
+    font-size: 15px;
+}
+
+.links a {
+    margin-right: 12px;
+    font-size: 15px;
+}
+
+.footer {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 24px 22px 48px;
+    color: var(--muted);
+    font-size: 14px;
+    border-top: 1px solid var(--border);
+}
+
+@media (max-width: 700px) {
+    .nav-wrap {
+        display: block;
+    }
+
+    .nav {
+        margin-top: 12px;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .hero {
+        display: block;
+    }
+
+    .profile {
+        margin-bottom: 24px;
+    }
+}
