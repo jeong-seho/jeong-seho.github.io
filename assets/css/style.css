@@ -71,8 +71,8 @@ img {
 
 
 /* ============================================================
-   3. Header / Navigation
-   ============================================================ */
+    3. Header / Navigation
+============================================================ */
 
 .site-header {
     background: var(--page-bg);
@@ -85,7 +85,7 @@ img {
 
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-end;
 }
 
 .site-title {
@@ -499,6 +499,7 @@ img {
 @media (max-width: 700px) {
     .nav-wrap {
         display: block;
+        justify-content: flex-end;
         padding-top: 18px;
     }
 
@@ -509,6 +510,7 @@ img {
 
     .nav {
         flex-wrap: wrap;
+        justify-content: flex-end;
         gap: 12px 18px;
     }
 
