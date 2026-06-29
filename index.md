@@ -5,11 +5,8 @@ permalink: /
 ---
 
 <section class="home-hero">
-    <div class="home-left">
-        <h1 class="home-name">
-        Seho Jeong
-        <span class="home-name-korean">정세호</span>
-        </h1>
+    <div class="home-main">
+        <h1 class="home-name">Seho Jeong</h1>
 
         <p class="home-intro">
         I am a Ph.D. student in economics with research interests in
@@ -20,60 +17,61 @@ permalink: /
         Check out my <a href="/assets/cv/cv.pdf">CV</a> for more information about me.
         </p>
 
-        <section class="home-section">
-        <h2 class="section-label">Research Interests</h2>
+        <section class="home-block">
+        <h2 class="block-title">Research Interests</h2>
 
         <div class="interest-grid">
             <div class="interest-card">
             <div class="interest-title">Macro-Finance</div>
-            <div class="interest-desc">Corporate Bond Markets, Investor Demand</div>
+            <div class="interest-text">Corporate Bond Markets, Investor Demand</div>
             </div>
 
             <div class="interest-card">
             <div class="interest-title">Corporate Finance</div>
-            <div class="interest-desc">Firm Financing, Bond Market Access</div>
+            <div class="interest-text">Firm Financing, Capital Structure</div>
             </div>
 
             <div class="interest-card">
             <div class="interest-title">Financial Intermediation</div>
-            <div class="interest-desc">Banks, Credit, Capital Structure</div>
+            <div class="interest-text">Banks, Credit, Bond Market Access</div>
             </div>
         </div>
         </section>
 
-        <section class="home-section">
-        <h2 class="section-label">Education</h2>
+        <section class="home-block">
+        <h2 class="block-title">Education</h2>
 
         <div class="education-list">
+            <p>Ph.D. Economics, Your University, 20XX–Present</p>
             <p>M.A. Economics, Your University, 20XX–20XX</p>
             <p>B.A. Economics, Your University, 20XX–20XX</p>
         </div>
         </section>
 
-        <div class="home-buttons">
-        <a class="pill-button" href="/assets/cv/cv.pdf">
+        <div class="button-row">
+        <a class="home-button" href="/assets/cv/cv.pdf">
             <span class="button-icon">▣</span>
-            CV
+            <span>CV</span>
         </a>
 
-        <a class="pill-button" href="mailto:seho6549@gmail.com">
+        <a class="home-button" href="mailto:seho6549@gmail.com">
             <span class="button-icon">✉</span>
-            Email
+            <span>Email</span>
         </a>
 
-        <a class="pill-button" href="https://github.com/seho6549">
+        <a class="home-button" href="https://github.com/seho6549">
             <span class="button-icon">⌘</span>
-            GitHub
+            <span>GitHub</span>
         </a>
 
-        <a class="pill-button" href="#">
+        <a class="home-button" href="#">
             <span class="button-icon">◎</span>
-            Location
+            <span>Location</span>
         </a>
         </div>
     </div>
 
-    <div class="home-right">
-        <img src="/assets/img/profile.jpeg" alt="Seho Jeong" class="profile-photo">
-    </div>
+    <aside class="home-photo-wrap">
+        <img src="/assets/img/profile.jpeg" alt="Seho Jeong" class="home-photo">
+    </aside>
 </section>
