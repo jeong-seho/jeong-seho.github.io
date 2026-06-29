@@ -1,214 +1,543 @@
+/* ============================================================
+   Academic Website Style
+   Inspired by a minimalist academic homepage layout
+   ============================================================ */
+
+
+/* ============================================================
+   1. Global Variables
+   ============================================================ */
+
 :root {
-    --text: #111;
-    --muted: #666;
-    --border: #ddd;
-    --bg: #fff;
-    --link: #111;
-    --max-width: 900px;
+  /* Colors */
+  --bg: #f3eee7;
+  --text: #262321;
+  --muted: #625d58;
+  --border: #ded8cf;
+  --card-bg: rgba(255, 255, 255, 0.45);
+  --button-bg: rgba(255, 255, 255, 0.58);
+  --button-bg-hover: rgba(255, 255, 255, 0.86);
+
+  /* Layout */
+  --max-width: 1120px;
+
+  /* Typography */
+  --serif: Georgia, "Times New Roman", serif;
+  --sans: Arial, Helvetica, sans-serif;
 }
 
+
+/* ============================================================
+   2. Base Styles
+   ============================================================ */
+
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--text);
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 17px;
-    line-height: 1.65;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.65;
 }
 
+a {
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  opacity: 0.75;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
+/* ============================================================
+   3. Header and Navigation
+   ============================================================ */
+
 .site-header {
-    border-bottom: 1px solid var(--border);
-    background: #fff;
+  background: var(--bg);
 }
 
 .nav-wrap {
-    max-width: var(--max-width);
-    margin: 0 auto;
-    padding: 18px 22px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 22px 20px 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .site-title {
-    font-size: 18px;
-    font-weight: 600;
-    color: var(--text);
-    text-decoration: none;
+  color: var(--text);
+  font-family: var(--serif);
+  font-size: 19px;
+  font-weight: 700;
+  text-decoration: none;
 }
 
 .nav {
-    display: flex;
-    gap: 22px;
-    font-size: 15px;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+
+  font-family: var(--sans);
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .nav a {
-    color: var(--muted);
-    text-decoration: none;
+  color: var(--muted);
+  text-decoration: none;
+  padding-bottom: 4px;
+  border-bottom: 1px solid transparent;
 }
 
 .nav a:hover,
 .nav a.active {
-    color: var(--text);
-    border-bottom: 1px solid var(--text);
+  color: var(--text);
+  border-bottom-color: var(--text);
+  opacity: 1;
 }
+
+
+/* ============================================================
+   4. General Page Layout
+   ============================================================ */
 
 .page {
-    max-width: var(--max-width);
-    margin: 0 auto;
-    padding: 48px 22px 80px;
-}
-
-.hero {
-    display: grid;
-    grid-template-columns: 180px 1fr;
-    gap: 36px;
-    align-items: start;
-    margin-bottom: 48px;
-}
-
-.profile {
-    width: 180px;
-    border-radius: 4px;
-}
-
-h1 {
-    font-size: 34px;
-    line-height: 1.2;
-    margin: 0 0 18px;
-    font-weight: 500;
-}
-
-h2 {
-    font-size: 24px;
-    margin-top: 44px;
-    padding-bottom: 6px;
-    border-bottom: 1px solid var(--border);
-    font-weight: 500;
-}
-
-h3 {
-    font-size: 19px;
-    margin-bottom: 4px;
-}
-
-a {
-    color: var(--link);
-    text-underline-offset: 3px;
-}
-
-.small {
-    color: var(--muted);
-    font-size: 15px;
-}
-
-.paper {
-    margin-bottom: 28px;
-}
-
-.paper-title {
-    font-weight: 600;
-}
-
-.paper-meta {
-    color: var(--muted);
-    font-size: 15px;
-}
-
-.links a {
-    margin-right: 12px;
-    font-size: 15px;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 24px 20px 80px;
 }
 
 .footer {
-    max-width: var(--max-width);
-    margin: 0 auto;
-    padding: 24px 22px 48px;
-    color: var(--muted);
-    font-size: 14px;
-    border-top: 1px solid var(--border);
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 28px 20px 48px;
+
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 13px;
 }
 
-@media (max-width: 700px) {
-    .nav-wrap {
-        display: block;
-    }
 
-    .nav {
-        margin-top: 12px;
-        flex-wrap: wrap;
-        gap: 12px;
-    }
-
-    .hero {
-        display: block;
-    }
-
-    .profile {
-        margin-bottom: 24px;
-    }
-}
+/* ============================================================
+   5. Homepage Hero Layout
+   ============================================================ */
 
 .home-hero {
-    display: grid;
-    grid-template-columns: 1fr 260px;
-    gap: 56px;
-    align-items: start;
-    margin-top: 24px;
+  display: grid;
+  grid-template-columns: minmax(0, 680px) 312px;
+  gap: 88px;
+  align-items: start;
 }
 
-.home-text h1 {
-    font-size: 34px;
-    line-height: 1.2;
-    font-weight: 500;
-    margin: 0 0 24px;
+.home-left {
+  min-width: 0;
 }
 
-.intro {
-    font-size: 18px;
-    line-height: 1.7;
-    margin-bottom: 18px;
+.home-right {
+  display: flex;
+  justify-content: flex-end;
 }
 
-.contact {
-    margin-top: 28px;
-    color: var(--muted);
-    font-size: 15px;
-    line-height: 1.8;
+
+/* ============================================================
+   6. Homepage Name and Intro
+   ============================================================ */
+
+.home-name {
+  margin: 0 0 18px;
+
+  font-family: var(--serif);
+  font-size: 42px;
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: -0.03em;
 }
 
-.home-photo {
-    display: flex;
-    justify-content: flex-end;
+.home-name-korean {
+  margin-left: 8px;
+
+  font-weight: 400;
+  letter-spacing: 0;
 }
 
-.home-photo img {
+.home-intro {
+  max-width: 660px;
+  margin: 0;
+
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.home-intro a {
+  color: var(--muted);
+}
+
+
+/* ============================================================
+   7. Profile Photo
+   ============================================================ */
+
+.profile-photo {
+  width: 312px;
+  height: 312px;
+
+  object-fit: cover;
+  border-radius: 18px;
+
+  box-shadow: 0 22px 42px rgba(80, 68, 54, 0.16);
+}
+
+
+/* ============================================================
+   8. Section Labels
+   Used for Research Interests, Education, etc.
+   ============================================================ */
+
+.home-section {
+  margin-top: 34px;
+}
+
+.section-label {
+  margin: 0 0 16px;
+  padding: 0;
+  border: none;
+
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
+
+
+/* ============================================================
+   9. Research Interest Cards
+   ============================================================ */
+
+.interest-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.interest-card {
+  min-height: 82px;
+  padding: 14px 12px;
+
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--card-bg);
+}
+
+.interest-title {
+  margin-bottom: 6px;
+
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.interest-desc {
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.35;
+}
+
+
+/* ============================================================
+   10. Education
+   ============================================================ */
+
+.education-list p {
+  margin: 4px 0;
+
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+/* ============================================================
+   11. Homepage Buttons
+   ============================================================ */
+
+.home-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  margin-top: 24px;
+}
+
+.pill-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 12px 18px;
+
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--button-bg);
+
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 14px;
+  line-height: 1;
+  text-decoration: none;
+
+  transition:
+    background 0.15s ease,
+    transform 0.15s ease,
+    opacity 0.15s ease;
+}
+
+.pill-button:hover {
+  background: var(--button-bg-hover);
+  transform: translateY(-1px);
+  opacity: 1;
+}
+
+.button-icon {
+  font-size: 13px;
+  line-height: 1;
+}
+
+
+/* ============================================================
+   12. Generic Content Pages
+   Research, Teaching, Service, Miscellaneous
+   ============================================================ */
+
+.content-page {
+  max-width: 760px;
+}
+
+.content-page h1 {
+  margin: 0 0 30px;
+
+  font-size: 38px;
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.content-page h2 {
+  margin: 42px 0 16px;
+  padding-bottom: 8px;
+
+  border-bottom: 1px solid var(--border);
+
+  font-size: 24px;
+  line-height: 1.3;
+  font-weight: 500;
+}
+
+.content-page h3 {
+  margin: 28px 0 6px;
+
+  font-size: 19px;
+  line-height: 1.35;
+  font-weight: 600;
+}
+
+.content-page p,
+.content-page li {
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.content-page ul {
+  padding-left: 22px;
+}
+
+
+/* ============================================================
+   13. Research Page Items
+   ============================================================ */
+
+.paper {
+  margin-bottom: 32px;
+}
+
+.paper-title {
+  margin-bottom: 4px;
+
+  color: var(--text);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.paper-authors,
+.paper-meta {
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.paper-abstract {
+  margin-top: 10px;
+}
+
+.paper-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  margin-top: 10px;
+}
+
+.paper-links a {
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 14px;
+}
+
+
+/* ============================================================
+   14. Utility Classes
+   ============================================================ */
+
+.small {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.no-margin-top {
+  margin-top: 0;
+}
+
+.spacer {
+  height: 24px;
+}
+
+
+/* ============================================================
+   15. Responsive Design
+   ============================================================ */
+
+@media (max-width: 900px) {
+  .home-hero {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .home-right {
+    justify-content: flex-start;
+    order: -1;
+  }
+
+  .profile-photo {
     width: 240px;
-    max-width: 100%;
-    border-radius: 4px;
-    display: block;
-}
+    height: 240px;
+  }
 
-:root {
-    --max-width: 900px;
+  .interest-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 700px) {
-    .home-hero {
-        display: block;
-    }
+  .nav-wrap {
+    display: block;
+    padding-top: 18px;
+  }
 
-    .home-photo {
-        justify-content: flex-start;
-        margin-top: 32px;
-    }
+  .site-title {
+    display: inline-block;
+    margin-bottom: 12px;
+  }
 
-    .home-photo img {
-        width: 200px;
-    }
+  .nav {
+    flex-wrap: wrap;
+    gap: 12px 18px;
+  }
+
+  .page {
+    padding-top: 20px;
+  }
+
+  .home-name {
+    font-size: 34px;
+  }
+
+  .home-name-korean {
+    display: inline-block;
+    margin-left: 4px;
+  }
+
+  .home-intro {
+    font-size: 15.5px;
+  }
+
+  .section-label {
+    font-size: 12px;
+    letter-spacing: 0.22em;
+  }
+
+  .home-buttons {
+    gap: 10px;
+  }
+
+  .pill-button {
+    padding: 11px 16px;
+  }
+
+  .content-page h1 {
+    font-size: 32px;
+  }
+
+  .content-page h2 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 420px) {
+  .profile-photo {
+    width: 200px;
+    height: 200px;
+  }
+
+  .home-name {
+    font-size: 31px;
+  }
+
+  .home-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .pill-button {
+    justify-content: center;
+  }
 }
