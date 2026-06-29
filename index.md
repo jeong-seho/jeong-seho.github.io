@@ -22,18 +22,18 @@ permalink: /
 
         <div class="interest-grid">
             <div class="interest-card">
-            <div class="interest-title">Financial Economics</div>
-            <div class="interest-text">Corporate Bond Markets, Investor Demand</div>
+            <div class="interest-title">Asset Pricing</div>
+            <div class="interest-text">AAA, BBB</div>
+            </div>
+
+            <div class="interest-card">
+            <div class="interest-title">Financial Institutions</div>
+            <div class="interest-text">AAA, BBB</div>
             </div>
 
             <div class="interest-card">
             <div class="interest-title">Macroeconomics</div>
-            <div class="interest-text">Firm Financing, Capital Structure</div>
-            </div>
-
-            <div class="interest-card">
-            <div class="interest-title">Machine Learning</div>
-            <div class="interest-text">Banks, Credit, Bond Market Access</div>
+            <div class="interest-text">AAA, BBB</div>
             </div>
         </div>
         </section>
