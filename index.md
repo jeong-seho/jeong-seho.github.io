@@ -5,7 +5,7 @@ permalink: /
 ---
 
 <div class="hero">
-  <img class="profile" src="/assets/img/profile.jpg" alt="Profile photo">
+  <img class="profile" src="/assets/img/profile.jpeg" alt="Profile photo">
 
   <div>
     <h1>Seho Jeong</h1>
