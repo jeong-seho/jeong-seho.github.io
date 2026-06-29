@@ -210,7 +210,7 @@ img {
     object-position: center;
 
     border-radius: 18px;
-    box-shadow: 0 26px 46px rgba(78, 67, 55, 0.16);
+    /* box-shadow: 0 26px 46px rgba(78, 67, 55, 0.16); */
 }
 
 
@@ -245,7 +245,7 @@ img {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 10px;
-    max-width: 672px;
+    max-width: 700px;
 }
 
 .interest-card {
