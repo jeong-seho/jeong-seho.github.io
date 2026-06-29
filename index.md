@@ -28,7 +28,3 @@ permalink: /
 My research studies how financial market structure and investor demand affect firm financing and real outcomes.
 
 See the full list on the [Research](/research/) page.
-
-## Teaching
-
-Information on teaching experience and materials is available on the [Teaching](/teaching/) page.
