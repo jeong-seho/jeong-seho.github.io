@@ -1,30 +1,33 @@
 ---
 layout: default
-title: Overview
+title: Home
 permalink: /
 ---
 
-<div class="hero">
-  <img class="profile" src="/assets/img/profile.jpeg" alt="Profile photo">
+<section class="home-hero">
+    <div class="home-text">
+        <h1>Seho Jeong</h1>
 
-  <div>
-    <h1>Seho Jeong</h1>
+        <p class="intro">
+        I am a researcher in finance and macroeconomics, with interests in
+        corporate bond markets, heterogeneous investors, firm financing, and
+        macro-finance.
+        </p>
 
-    <p>
-      I am a researcher in finance and macroeconomics, with interests in
-      corporate bond markets, heterogeneous investors, firm financing, and
-      macro-finance.
-    </p>
+        <p>
+        I am currently working on how investor demand shapes firms' access to
+        corporate bond markets, with a particular focus on the Korean corporate
+        bond market.
+        </p>
 
-    <p class="small">
-      Email: <a href="mailto:sehojeong@sogang.ac.kr">sehojeong@sogang.ac.kr</a><br>
-      CV: <a href="/assets/cv/cv.pdf">PDF</a>
-    </p>
-  </div>
-</div>
+        <p class="contact">
+        Email: <a href="mailto:sehojeong@sogang.ac.kr">sehojeong@sogang.ac.kr</a><br>
+        CV: <a href="/assets/cv/cv.pdf">PDF</a><br>
+        GitHub: <a href="https://github.com/jeong-seho">@jeong-seho</a>
+        </p>
+    </div>
 
-## Research
-
-My research studies how financial market structure and investor demand affect firm financing and real outcomes.
-
-See the full list on the [Research](/research/) page.
+    <div class="home-photo">
+        <img src="/assets/img/profile.jpeg" alt="Seho Jeong">
+    </div>
+</section>
