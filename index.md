@@ -22,17 +22,17 @@ permalink: /
 
         <div class="interest-grid">
             <div class="interest-card">
-            <div class="interest-title">Macro-Finance</div>
+            <div class="interest-title">Financial Economics</div>
             <div class="interest-text">Corporate Bond Markets, Investor Demand</div>
             </div>
 
             <div class="interest-card">
-            <div class="interest-title">Corporate Finance</div>
+            <div class="interest-title">Macroeconomics</div>
             <div class="interest-text">Firm Financing, Capital Structure</div>
             </div>
 
             <div class="interest-card">
-            <div class="interest-title">Financial Intermediation</div>
+            <div class="interest-title">Machine Learning</div>
             <div class="interest-text">Banks, Credit, Bond Market Access</div>
             </div>
         </div>
@@ -42,9 +42,8 @@ permalink: /
         <h2 class="block-title">Education</h2>
 
         <div class="education-list">
-            <p>Ph.D. Economics, Your University, 20XX–Present</p>
-            <p>M.A. Economics, Your University, 20XX–20XX</p>
-            <p>B.A. Economics, Your University, 20XX–20XX</p>
+            <p>M.A. Economics, Sogang University, 20XX–20XX</p>
+            <p>B.A. Economics, B.Sc. Mathematics, Sogang University, 20XX–20XX</p>
         </div>
         </section>
 
