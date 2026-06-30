@@ -8,6 +8,14 @@
     1. Design Tokens
 ============================================================ */
 
+@font-face {
+    font-family: "Pretendard";
+    font-weight: 45 920;
+    font-style: normal;
+    font-display: swap;
+    src: url("../fonts/PretendardVariable.woff2") format("woff2-variations");
+}
+
 :root {
     /* Colors */
     --page-bg: #f2ece4;
@@ -24,8 +32,8 @@
     --photo-size: 312px;
 
     /* Typography */
-    --font-serif: Georgia, "Times New Roman", Times, serif;
-    --font-sans: Arial, Helvetica, sans-serif;
+    --font-serif: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+    --font-sans: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
 }
 
 
@@ -178,7 +186,7 @@ img {
     font-size: 42px;
     font-weight: 700;
     line-height: 1.1;
-    letter-spacing: -0.045em;
+    letter-spacing: -0.015em;
 }
 
 .home-intro {
