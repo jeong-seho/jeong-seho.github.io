@@ -79,7 +79,7 @@ permalink: /
         </div>
 
         <div class="paper-authors">
-            with John Doe and Jane Doe
+            with John Doe 
         </div>
 
         <p class="paper-abstract">
