@@ -6,15 +6,14 @@ permalink: /
 
 <!-- HOME SECTION -->
 
-<section id="overview" class="home-hero page-section">
+<section id="home" class="home-hero page-section">
     <div class="home-main">
         <h1 class="home-name">Seho Jeong</h1>
 
         <p class="home-intro">
         I am a Master's student in economics with research interests in
         asset pricing, financial institutions, and macroeconomics.
-        Morbi bibendum lectus nunc, quis consequat ex dapibus quis. Sed molestie condimentum commodo. Nullam placerat, odio in vestibulum interdum, ligula nisi eleifend ex, eget vestibulum enim erat ut nulla. Fusce lobortis cursus eros, et viverra dolor cursus eu. Etiam dui elit, lacinia tincidunt turpis ut, eleifend aliquet lectus. Feel free to reach me at
-        <a href="mailto:seho6549@gmail.com">seho6549@gmail.com</a>.
+        Morbi bibendum lectus nunc, quis consequat ex dapibus quis. Sed molestie condimentum commodo. Nullam placerat, odio in vestibulum interdum, ligula nisi eleifend ex, eget vestibulum enim erat ut nulla. Fusce lobortis cursus eros, et viverra dolor cursus eu. Etiam dui elit, lacinia tincidunt turpis ut, eleifend aliquet lectus. Feel free to reach me at sehojeong [at] sogang [dot] ac [dot] kr.
         Check out my <a href="/assets/cv/cv.pdf">CV</a> for more information about me.
         </p>
 
@@ -54,19 +53,9 @@ permalink: /
                 <span>CV</span>
             </a>
 
-            <a class="home-button" href="mailto:seho6549@gmail.com">
-                <span class="button-icon">✉</span>
-                <span>Email</span>
-            </a>
-
-            <a class="home-button" href="https://github.com/seho6549">
+            <a class="home-button" href="https://github.com/jeong-seho">
                 <span class="button-icon">⌘</span>
                 <span>GitHub</span>
-            </a>
-
-            <a class="home-button" href="#">
-                <span class="button-icon">◎</span>
-                <span>Location</span>
             </a>
         </div>
     </div>
@@ -90,7 +79,7 @@ permalink: /
         </div>
 
         <div class="paper-authors">
-            Working paper
+            with John Doe and Jane Doe
         </div>
 
         <p class="paper-abstract">
@@ -109,7 +98,7 @@ permalink: /
         </div>
 
         <div class="paper-authors">
-            Work in progress
+            with John Doe and Jane Doe
         </div>
 
         <p class="paper-abstract">
