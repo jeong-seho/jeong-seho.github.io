@@ -7,6 +7,6 @@ markdown: kramdown
 
 nav:
   - title: Home
-    url: /
+    url: "#home"
   - title: Research
-    url: /research/
+    url: "#research"
