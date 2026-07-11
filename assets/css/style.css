@@ -12,7 +12,7 @@
     font-weight: 45 920;
     font-style: normal;
     font-display: swap;
-    src: url("../fonts/PretendardVariable.woff2") format("woff2-variations");
+    src: url("../fonts/PretendardVariable.woff2") format("woff2");
 }
 
 :root {
@@ -72,6 +72,11 @@ a:hover {
     opacity: 0.72;
 }
 
+a:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 4px;
+}
+
 img {
     display: block;
     max-width: 100%;
@@ -81,6 +86,29 @@ img {
 /* ============================================================
     3. Header / Navigation
 ============================================================ */
+
+.skip-link {
+    position: fixed;
+    top: 12px;
+    left: 12px;
+    z-index: 200;
+
+    padding: 10px 14px;
+    background: var(--text-main);
+    color: var(--page-bg);
+    border-radius: 8px;
+
+    font-family: var(--font-sans);
+    font-size: 14px;
+    text-decoration: none;
+
+    transform: translateY(-200%);
+    transition: transform 0.16s ease;
+}
+
+.skip-link:focus {
+    transform: translateY(0);
+}
 
 .site-header {
     position: sticky;
@@ -98,14 +126,6 @@ img {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-}
-
-.site-title {
-    color: var(--text-main);
-    font-family: var(--font-serif);
-    font-size: 18px;
-    font-weight: 700;
-    text-decoration: none;
 }
 
 .nav {
@@ -128,10 +148,14 @@ img {
 }
 
 .nav a:hover,
-.nav a.active {
+.nav a:focus-visible {
     color: var(--text-main);
     border-bottom-color: var(--text-main);
     opacity: 1;
+}
+
+.nav a:focus-visible {
+    outline-offset: 6px;
 }
 
 
@@ -147,6 +171,10 @@ img {
 
 .page-section {
     scroll-margin-top: 90px;
+}
+
+#main-content:focus {
+    outline: none;
 }
 
 .footer {
@@ -516,15 +544,8 @@ img {
 
 @media (max-width: 700px) {
     .nav-wrap {
-        display: block;
-        justify-content: flex-end;
         padding-top: 18px;
     }
-
-    /* .site-title {
-        display: inline-block;
-        margin-bottom: 12px;
-    } */
 
     .nav {
         flex-wrap: wrap;
@@ -559,11 +580,11 @@ img {
         padding: 0 18px;
     }
 
-    .content-page h1 {
+    .content-section h1 {
         font-size: 32px;
     }
 
-    .content-page h2 {
+    .content-section h2 {
         font-size: 22px;
     }
 }
@@ -587,5 +608,20 @@ img {
 
     .home-button {
         width: 100%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
     }
 }
