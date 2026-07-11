@@ -19,20 +19,7 @@ permalink: /
 
         <section class="home-block">
             <h2 class="block-title">Research Interests</h2>
-
-            <div class="interest-grid">
-                <div class="interest-card">
-                    <div class="interest-title">Asset Pricing</div>
-                </div>
-
-                <div class="interest-card">
-                    <div class="interest-title">Financial Institution</div>
-                </div>
-
-                <div class="interest-card">
-                    <div class="interest-title">Macroeconomics</div>
-                </div>
-            </div>
+            <p class="interest-list">Asset Pricing <span aria-hidden="true">·</span> Financial Institution <span aria-hidden="true">·</span> Macroeconomics</p>
         </section>
 
         <section class="home-block">
@@ -89,9 +76,24 @@ permalink: /
                 </div>
 
                 <div class="paper-actions" role="group" aria-label="Project resources">
-                    <a class="resource-link" href="#" download>Paper</a>
-                    <a class="resource-link" href="#" download>Slides</a>
-                    <button class="resource-link abstract-button" type="button" aria-expanded="false" aria-controls="abstract-paper-1">Abstract</button>
+                    <a class="resource-link" href="#" download>
+                        <svg class="resource-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                            <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 0 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z"/>
+                            <path d="M5.5 7a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5"/>
+                        </svg>
+                        <span>Paper</span>
+                    </a>
+                    <a class="resource-link" href="#" download>
+                        <svg class="resource-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                            <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 0 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z"/>
+                            <path d="M5.5 7a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5"/>
+                        </svg>
+                        <span>Slides</span>
+                    </a>
+                    <button class="resource-link abstract-button" type="button" aria-expanded="false" aria-controls="abstract-paper-1">
+                        <span>Abstract</span>
+                        <span class="abstract-toggle" aria-hidden="true"></span>
+                    </button>
                 </div>
 
                 <div class="abstract-body" id="abstract-paper-1" hidden>
@@ -106,7 +108,10 @@ permalink: /
                 </div>
 
                 <div class="paper-actions" role="group" aria-label="Project resources">
-                    <button class="resource-link abstract-button" type="button" aria-expanded="false" aria-controls="abstract-paper-2">Abstract</button>
+                    <button class="resource-link abstract-button" type="button" aria-expanded="false" aria-controls="abstract-paper-2">
+                        <span>Abstract</span>
+                        <span class="abstract-toggle" aria-hidden="true"></span>
+                    </button>
                 </div>
 
                 <div class="abstract-body" id="abstract-paper-2" hidden>
