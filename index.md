@@ -91,8 +91,8 @@ permalink: /
                         <span>Slides</span>
                     </a>
                     <button class="resource-link abstract-button" type="button" aria-expanded="false" aria-controls="abstract-paper-1">
-                        <span>Abstract</span>
                         <span class="abstract-toggle" aria-hidden="true"></span>
+                        <span>Abstract</span>
                     </button>
                 </div>
 
@@ -109,8 +109,8 @@ permalink: /
 
                 <div class="paper-actions" role="group" aria-label="Project resources">
                     <button class="resource-link abstract-button" type="button" aria-expanded="false" aria-controls="abstract-paper-2">
-                        <span>Abstract</span>
                         <span class="abstract-toggle" aria-hidden="true"></span>
+                        <span>Abstract</span>
                     </button>
                 </div>
 
