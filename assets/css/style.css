@@ -115,6 +115,15 @@ img {
     position: sticky;
     top: 0;
     z-index: 100;
+    isolation: isolate;
+}
+
+.site-header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
 
     background:
         linear-gradient(135deg, rgba(255, 255, 255, 0.70), rgba(255, 255, 255, 0.24)),
@@ -125,6 +134,13 @@ img {
         0 8px 28px rgba(56, 50, 44, 0.07);
     -webkit-backdrop-filter: blur(24px) saturate(180%);
     backdrop-filter: blur(24px) saturate(180%);
+
+    opacity: 0;
+    transition: opacity 0.28s ease;
+}
+
+.site-header.is-scrolled::before {
+    opacity: 1;
 }
 
 .nav-wrap {
