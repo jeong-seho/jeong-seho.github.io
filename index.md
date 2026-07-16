@@ -11,15 +11,13 @@ permalink: /
         <h1 class="home-name">Seho Jeong</h1>
 
         <p class="home-intro">
-        I am a Master's student in economics with research interests in
-        asset pricing, financial institutions, and macroeconomics.
-        Morbi bibendum lectus nunc, quis consequat ex dapibus quis. Sed molestie condimentum commodo. Nullam placerat, odio in vestibulum interdum, ligula nisi eleifend ex, eget vestibulum enim erat ut nulla. Fusce lobortis cursus eros, et viverra dolor cursus eu. Etiam dui elit, lacinia tincidunt turpis ut, eleifend aliquet lectus. Feel free to reach me at sehojeong [at] sogang [dot] ac [dot] kr.
+        I am a Master's student in Economics at Sogang University. I am interested in quantitatively analyzing how financial markets interact with the macroeconomy. My research focuses on how frictions in production sectors and financial intermediaries affect asset prices and corporate financing decisions. Feel free to reach me at sehojeong [at] sogang [dot] ac [dot] kr.
         Check out my <a href="/assets/cv/cv.pdf">CV</a> for more information about me.
         </p>
 
         <section class="home-block">
             <h2 class="block-title">Research Interests</h2>
-            <p class="interest-list">Asset Pricing <span aria-hidden="true">·</span> Financial Institution <span aria-hidden="true">·</span> Macroeconomics</p>
+            <p class="interest-list">Asset Pricing <span aria-hidden="true">·</span> Financial Institutions <span aria-hidden="true">·</span> Macroeconomics</p>
         </section>
 
         <section class="home-block">
