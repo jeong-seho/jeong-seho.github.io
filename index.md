@@ -11,8 +11,9 @@ permalink: /
         <h1 class="home-name">Seho Jeong</h1>
 
         <p class="home-intro">
-        I am a Master's student in Economics at Sogang University. I am interested in quantitatively analyzing how financial markets interact with the macroeconomy. My research focuses on how frictions in production sectors and financial intermediaries affect asset prices and corporate financing decisions. Feel free to reach me at sehojeong [at] sogang [dot] ac [dot] kr.
-        Check out my <a href="/assets/cv/cv.pdf">CV</a> for more information about me.
+            I am a Master's student in Economics at Sogang University. I am interested in quantitatively analyzing how financial markets interact with the macroeconomy. My research focuses on how frictions in production sectors and financial intermediaries affect asset prices and corporate financing decisions. 
+            
+            Feel free to reach me at sehojeong [at] sogang [dot] ac [dot] kr.
         </p>
 
         <section class="home-block">
@@ -74,6 +75,11 @@ permalink: /
                 </div>
 
                 <div class="paper-actions" role="group" aria-label="Project resources">
+                    <button class="resource-link abstract-button" type="button" aria-expanded="false" aria-controls="abstract-paper-1">
+                        <span class="abstract-toggle" aria-hidden="true"></span>
+                        <span>Abstract</span>
+                    </button>
+
                     <a class="resource-link" href="#" download>
                         <svg class="resource-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
                             <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 0 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z"/>
@@ -81,6 +87,7 @@ permalink: /
                         </svg>
                         <span>Paper</span>
                     </a>
+
                     <a class="resource-link" href="#" download>
                         <svg class="resource-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
                             <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 0 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z"/>
@@ -88,10 +95,6 @@ permalink: /
                         </svg>
                         <span>Slides</span>
                     </a>
-                    <button class="resource-link abstract-button" type="button" aria-expanded="false" aria-controls="abstract-paper-1">
-                        <span class="abstract-toggle" aria-hidden="true"></span>
-                        <span>Abstract</span>
-                    </button>
                 </div>
 
                 <div class="abstract-body" id="abstract-paper-1" hidden>
