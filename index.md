@@ -8,7 +8,7 @@ permalink: /
 
 <section id="home" class="home-hero page-section">
     <div class="home-main">
-        <h1 class="home-name">Seho Jeong</h1>
+        <h1 class="home-name">Seho <span class="home-family-name">Jeong</span></h1>
 
         <p class="home-intro">
             I am a Master's student in Economics at Sogang University. I am interested in quantitatively analyzing how financial markets interact with the macroeconomy. My research focuses on how frictions in production sectors and financial intermediaries affect asset prices and corporate financing decisions. 
@@ -50,7 +50,9 @@ permalink: /
     </div>
 
     <aside class="home-photo-wrap">
-        <img src="/assets/img/profile.jpeg" alt="Seho Jeong" class="home-photo">
+        <div class="home-photo-frame">
+            <img src="/assets/img/profile.jpeg" alt="Seho Jeong" class="home-photo">
+        </div>
     </aside>
 </section>
 
@@ -60,7 +62,7 @@ permalink: /
 <section id="research" class="research-section page-section">
     <div class="research-intro">
         <p class="research-kicker">Papers</p>
-        <h1>Research</h1>
+        <h1 class="section-title">Research</h1>
         <p class="research-description">Working papers and selected research projects.</p>
     </div>
 

@@ -32,6 +32,7 @@
     --photo-size: 312px;
 
     /* Typography */
+    --font-display: "Fraunces", Georgia, "Times New Roman", serif;
     --font-serif: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
     --font-sans: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
 }
@@ -255,11 +256,16 @@ img {
     margin: 0 0 18px;
 
     color: var(--text-main);
-    font-family: var(--font-serif);
+    font-family: var(--font-display);
     font-size: 42px;
     font-weight: 700;
     line-height: 1.1;
     letter-spacing: -0.015em;
+    font-optical-sizing: auto;
+}
+
+.home-family-name {
+    font-style: italic;
 }
 
 .home-intro {
@@ -281,17 +287,43 @@ img {
     7. Profile Image
 ============================================================ */
 
-.home-photo {
+.home-photo-frame {
+    position: relative;
     width: var(--photo-size);
     height: var(--photo-size);
-    max-width: var(--photo-size);
-    max-height: var(--photo-size);
+    padding: 7px;
+    overflow: hidden;
+
+    background:
+        radial-gradient(circle at 28% 10%, rgba(255, 255, 255, 0.96), transparent 31%),
+        conic-gradient(
+            from 205deg,
+            rgba(255, 255, 255, 0.38),
+            rgba(255, 255, 255, 0.86),
+            rgba(218, 225, 235, 0.42),
+            rgba(255, 255, 255, 0.72),
+            rgba(255, 255, 255, 0.38)
+        ),
+        var(--glass-bg);
+    border: 1px solid rgba(255, 255, 255, 0.84);
+    border-radius: 50%;
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.96),
+        inset 0 -1px 0 rgba(86, 92, 102, 0.12),
+        0 20px 44px rgba(56, 50, 44, 0.12);
+    -webkit-backdrop-filter: blur(22px) saturate(175%);
+    backdrop-filter: blur(22px) saturate(175%);
+}
+
+.home-photo {
+    width: 100%;
+    height: 100%;
 
     object-fit: cover;
     object-position: center;
 
-    border-radius: 18px;
-    /* box-shadow: 0 26px 46px rgba(78, 67, 55, 0.16); */
+    border: 1px solid rgba(255, 255, 255, 0.58);
+    border-radius: 50%;
 }
 
 
@@ -439,15 +471,16 @@ img {
     text-transform: uppercase;
 }
 
-.research-intro h1 {
+.research-intro .section-title {
     margin: 0;
 
     color: var(--text-main);
-    font-family: var(--font-serif);
+    font-family: var(--font-display);
     font-size: clamp(36px, 4.3vw, 52px);
     font-weight: 700;
     line-height: 1.08;
     letter-spacing: -0.035em;
+    font-optical-sizing: auto;
 }
 
 .research-description {
@@ -657,11 +690,9 @@ img {
         justify-content: flex-start;
     }
 
-    .home-photo {
+    .home-photo-frame {
         width: 230px;
         height: 230px;
-        max-width: 230px;
-        max-height: 230px;
     }
 
     .research-section {
@@ -728,11 +759,9 @@ img {
 }
 
 @media (max-width: 430px) {
-    .home-photo {
+    .home-photo-frame {
         width: 200px;
         height: 200px;
-        max-width: 200px;
-        max-height: 200px;
     }
 
     .home-name {
