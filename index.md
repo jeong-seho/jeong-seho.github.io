@@ -61,13 +61,13 @@ permalink: /
 
 <section id="research" class="research-section page-section">
     <div class="research-intro">
-        <p class="research-kicker">Papers</p>
+        <p class="research-kicker">01</p>
         <h1 class="section-title">Research</h1>
-        <p class="research-description">Working papers and selected research projects.</p>
+        <p class="research-description">Selected research projects</p>
     </div>
 
     <div class="research-content">
-        <h2 class="research-group-title">Working Papers</h2>
+        <h2 class="research-group-title">Work in Progress</h2>
 
         <div class="paper-list">
             <article class="paper-card">
