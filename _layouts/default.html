@@ -14,6 +14,34 @@
 <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
 
+    <!--
+        Liquid Glass refraction filters. The maps are generated with the
+        zero-dependency generator from Zettersten/skills.
+    -->
+    <svg class="liquid-glass-filters" aria-hidden="true" focusable="false" width="0" height="0">
+        <defs>
+            <filter id="liquid-glass-nav-filter" color-interpolation-filters="sRGB" x="0%" y="0%" width="100%" height="100%">
+                <feImage result="nav-displacement" x="0" y="0" width="100%" height="100%" preserveAspectRatio="none" href="{{ '/assets/img/liquid-glass-nav.png' | relative_url }}" />
+                <feDisplacementMap in="SourceGraphic" in2="nav-displacement" scale="-8" xChannelSelector="R" yChannelSelector="G" />
+            </filter>
+
+            <filter id="liquid-glass-card-filter" color-interpolation-filters="sRGB" x="0%" y="0%" width="100%" height="100%">
+                <feImage result="card-displacement" x="0" y="0" width="100%" height="100%" preserveAspectRatio="none" href="{{ '/assets/img/liquid-glass-card.png' | relative_url }}" />
+                <feDisplacementMap in="SourceGraphic" in2="card-displacement" scale="-18" xChannelSelector="R" yChannelSelector="G" />
+            </filter>
+
+            <filter id="liquid-glass-card-expanded-filter" color-interpolation-filters="sRGB" x="0%" y="0%" width="100%" height="100%">
+                <feImage result="expanded-card-displacement" x="0" y="0" width="100%" height="100%" preserveAspectRatio="none" href="{{ '/assets/img/liquid-glass-card-expanded.png' | relative_url }}" />
+                <feDisplacementMap in="SourceGraphic" in2="expanded-card-displacement" scale="-18" xChannelSelector="R" yChannelSelector="G" />
+            </filter>
+
+            <filter id="liquid-glass-profile-filter" color-interpolation-filters="sRGB" x="0%" y="0%" width="100%" height="100%">
+                <feImage result="profile-displacement" x="0" y="0" width="100%" height="100%" preserveAspectRatio="none" href="{{ '/assets/img/liquid-glass-profile.png' | relative_url }}" />
+                <feDisplacementMap in="SourceGraphic" in2="profile-displacement" scale="-16" xChannelSelector="R" yChannelSelector="G" />
+            </filter>
+        </defs>
+    </svg>
+
     {% include nav.html %}
 
     <main id="main-content" class="page" tabindex="-1">

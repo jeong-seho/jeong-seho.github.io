@@ -50,8 +50,11 @@ permalink: /
     </div>
 
     <aside class="home-photo-wrap">
-        <div class="home-photo-frame">
-            <img src="/assets/img/profile.jpeg" alt="Seho Jeong" class="home-photo">
+        <div class="home-photo-frame liquid-glass">
+            <span class="liquid-glass__refract liquid-glass__refract--profile" aria-hidden="true"></span>
+            <span class="liquid-glass__tint" aria-hidden="true"></span>
+            <span class="liquid-glass__specular" aria-hidden="true"></span>
+            <img src="/assets/img/profile.jpeg" alt="Seho Jeong" class="home-photo liquid-glass__content">
         </div>
     </aside>
 </section>
@@ -70,55 +73,67 @@ permalink: /
         <h2 class="research-group-title">Work in Progress</h2>
 
         <div class="paper-list">
-            <article class="paper-card">
-                <div class="paper-header">
-                    <h3 class="paper-title">Lorem ipsum dolor sit amet</h3>
-                    <p class="paper-authors">with John Doe</p>
-                </div>
+            <article class="paper-card liquid-glass">
+                <span class="liquid-glass__refract liquid-glass__refract--card" aria-hidden="true"></span>
+                <span class="liquid-glass__tint" aria-hidden="true"></span>
+                <span class="liquid-glass__specular" aria-hidden="true"></span>
 
-                <div class="paper-actions" role="group" aria-label="Project resources">
-                    <button class="resource-link abstract-button" type="button" aria-expanded="false" aria-controls="abstract-paper-1">
-                        <span class="abstract-toggle" aria-hidden="true"></span>
-                        <span>Abstract</span>
-                    </button>
+                <div class="paper-card-content liquid-glass__content">
+                    <div class="paper-header">
+                        <h3 class="paper-title">Lorem ipsum dolor sit amet</h3>
+                        <p class="paper-authors">with John Doe</p>
+                    </div>
 
-                    <a class="resource-link" href="#" download>
-                        <svg class="resource-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
-                            <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 0 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z"/>
-                            <path d="M5.5 7a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5"/>
-                        </svg>
-                        <span>Paper</span>
-                    </a>
+                    <div class="paper-actions" role="group" aria-label="Project resources">
+                        <button class="resource-link abstract-button" type="button" aria-expanded="false" aria-controls="abstract-paper-1">
+                            <span class="abstract-toggle" aria-hidden="true"></span>
+                            <span>Abstract</span>
+                        </button>
 
-                    <a class="resource-link" href="#" download>
-                        <svg class="resource-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
-                            <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 0 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z"/>
-                            <path d="M5.5 7a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5"/>
-                        </svg>
-                        <span>Slides</span>
-                    </a>
-                </div>
+                        <a class="resource-link" href="#" download>
+                            <svg class="resource-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                                <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 0 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z"/>
+                                <path d="M5.5 7a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5"/>
+                            </svg>
+                            <span>Paper</span>
+                        </a>
 
-                <div class="abstract-body" id="abstract-paper-1" hidden>
-                    <p>Morbi pellentesque et diam ut dignissim. Aliquam hendrerit, leo eu malesuada viverra, diam ligula vehicula nibh, ac fermentum neque metus ut nisi. Quisque tincidunt nulla eget nisi rutrum convallis. In tempus purus massa. Donec at elit hendrerit, rhoncus mi a, hendrerit leo. Curabitur sed suscipit magna. Proin sagittis, nunc eget accumsan dapibus, sapien dolor scelerisque eros, et dictum tellus felis nec nunc. Etiam sed nibh at purus venenatis auctor eget ac augue. Integer malesuada leo a ornare congue. Morbi bibendum lectus nunc, quis consequat ex dapibus quis. Sed molestie condimentum commodo. Nullam placerat, odio in vestibulum interdum, ligula nisi eleifend ex, eget vestibulum enim erat ut nulla. Fusce lobortis cursus eros, et viverra dolor cursus eu. Etiam dui elit, lacinia tincidunt turpis ut, eleifend aliquet lectus.</p>
+                        <a class="resource-link" href="#" download>
+                            <svg class="resource-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                                <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 0 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z"/>
+                                <path d="M5.5 7a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5"/>
+                            </svg>
+                            <span>Slides</span>
+                        </a>
+                    </div>
+
+                    <div class="abstract-body" id="abstract-paper-1" hidden>
+                        <p>Morbi pellentesque et diam ut dignissim. Aliquam hendrerit, leo eu malesuada viverra, diam ligula vehicula nibh, ac fermentum neque metus ut nisi. Quisque tincidunt nulla eget nisi rutrum convallis. In tempus purus massa. Donec at elit hendrerit, rhoncus mi a, hendrerit leo. Curabitur sed suscipit magna. Proin sagittis, nunc eget accumsan dapibus, sapien dolor scelerisque eros, et dictum tellus felis nec nunc. Etiam sed nibh at purus venenatis auctor eget ac augue. Integer malesuada leo a ornare congue. Morbi bibendum lectus nunc, quis consequat ex dapibus quis. Sed molestie condimentum commodo. Nullam placerat, odio in vestibulum interdum, ligula nisi eleifend ex, eget vestibulum enim erat ut nulla. Fusce lobortis cursus eros, et viverra dolor cursus eu. Etiam dui elit, lacinia tincidunt turpis ut, eleifend aliquet lectus.</p>
+                    </div>
                 </div>
             </article>
 
-            <article class="paper-card">
-                <div class="paper-header">
-                    <h3 class="paper-title">Nullam est nulla, convallis placerat purus ac</h3>
-                    <p class="paper-authors">with John Doe and Jane Doe</p>
-                </div>
+            <article class="paper-card liquid-glass">
+                <span class="liquid-glass__refract liquid-glass__refract--card" aria-hidden="true"></span>
+                <span class="liquid-glass__tint" aria-hidden="true"></span>
+                <span class="liquid-glass__specular" aria-hidden="true"></span>
 
-                <div class="paper-actions" role="group" aria-label="Project resources">
-                    <button class="resource-link abstract-button" type="button" aria-expanded="false" aria-controls="abstract-paper-2">
-                        <span class="abstract-toggle" aria-hidden="true"></span>
-                        <span>Abstract</span>
-                    </button>
-                </div>
+                <div class="paper-card-content liquid-glass__content">
+                    <div class="paper-header">
+                        <h3 class="paper-title">Nullam est nulla, convallis placerat purus ac</h3>
+                        <p class="paper-authors">with John Doe and Jane Doe</p>
+                    </div>
 
-                <div class="abstract-body" id="abstract-paper-2" hidden>
-                    <p>Quisque accumsan vulputate erat id cursus. Etiam porttitor viverra mi, id mattis metus. Sed aliquam neque purus, sit amet suscipit mi posuere vitae. Proin ullamcorper risus quis ex tristique scelerisque. Aliquam efficitur commodo nisi vel sollicitudin. Donec pretium erat lorem, eu lacinia nisi gravida at. Donec facilisis ullamcorper dui quis fermentum. Mauris pharetra justo arcu, rhoncus vestibulum urna laoreet non. Nam consectetur sapien nec enim viverra pulvinar. Aliquam tincidunt convallis urna sit amet placerat. Fusce pretium dictum dapibus. Nunc varius pulvinar lorem, non mattis urna sagittis sed. Nullam vel felis dignissim, eleifend libero in, volutpat quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut cursus lectus quam, in porttitor libero dictum eget. Phasellus imperdiet sapien et odio lacinia, in porta nunc malesuada.</p>
+                    <div class="paper-actions" role="group" aria-label="Project resources">
+                        <button class="resource-link abstract-button" type="button" aria-expanded="false" aria-controls="abstract-paper-2">
+                            <span class="abstract-toggle" aria-hidden="true"></span>
+                            <span>Abstract</span>
+                        </button>
+                    </div>
+
+                    <div class="abstract-body" id="abstract-paper-2" hidden>
+                        <p>Quisque accumsan vulputate erat id cursus. Etiam porttitor viverra mi, id mattis metus. Sed aliquam neque purus, sit amet suscipit mi posuere vitae. Proin ullamcorper risus quis ex tristique scelerisque. Aliquam efficitur commodo nisi vel sollicitudin. Donec pretium erat lorem, eu lacinia nisi gravida at. Donec facilisis ullamcorper dui quis fermentum. Mauris pharetra justo arcu, rhoncus vestibulum urna laoreet non. Nam consectetur sapien nec enim viverra pulvinar. Aliquam tincidunt convallis urna sit amet placerat. Fusce pretium dictum dapibus. Nunc varius pulvinar lorem, non mattis urna sagittis sed. Nullam vel felis dignissim, eleifend libero in, volutpat quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut cursus lectus quam, in porttitor libero dictum eget. Phasellus imperdiet sapien et odio lacinia, in porta nunc malesuada.</p>
+                    </div>
                 </div>
             </article>
         </div>

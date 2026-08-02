@@ -6,9 +6,11 @@ document.querySelectorAll(".abstract-button").forEach((button) => {
 
     button.addEventListener("click", () => {
         const isExpanded = button.getAttribute("aria-expanded") === "true";
+        const willExpand = !isExpanded;
 
-        button.setAttribute("aria-expanded", String(!isExpanded));
+        button.setAttribute("aria-expanded", String(willExpand));
         panel.hidden = isExpanded;
+        button.closest(".paper-card")?.classList.toggle("has-expanded-abstract", willExpand);
     });
 });
 
