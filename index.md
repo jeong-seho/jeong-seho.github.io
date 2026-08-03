@@ -25,8 +25,8 @@ permalink: /
             <h2 class="block-title">Education</h2>
 
             <div class="education-list">
-                <p>M.A. Economics, Sogang University, February 2025 – Present</p>
-                <p>B.A. Economics; B.Sc. Mathematics, Sogang University, February 2019 – February 2025</p>
+                <p>M.A. Economics, Sogang University, 2025 – Present</p>
+                <p>B.A. Economics &amp; B.Sc. Mathematics, Sogang University, 2019 – 2025</p>
             </div>
         </section>
 
