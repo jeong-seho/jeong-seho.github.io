@@ -14,9 +14,6 @@
     --page-bg: #f4f6f8;
     --text-main: #272421;
     --text-muted: #625d58;
-    --line: #ded7cd;
-    --button-bg: rgba(255, 255, 255, 0.5);
-    --button-hover: rgba(255, 255, 255, 0.78);
 
     --site-width: 1120px;
     --left-column: 672px;
@@ -183,6 +180,13 @@ img {
     backdrop-filter: blur(10px) brightness(1.015) saturate(0.9);
     -webkit-backdrop-filter: blur(10px) url("#liquid-glass-profile-filter") brightness(1.015) saturate(0.9);
     backdrop-filter: blur(10px) url("#liquid-glass-profile-filter") brightness(1.015) saturate(0.9);
+}
+
+.liquid-glass__refract--button {
+    -webkit-backdrop-filter: blur(8px) brightness(1.02) saturate(1.03);
+    backdrop-filter: blur(8px) brightness(1.02) saturate(1.03);
+    -webkit-backdrop-filter: blur(8px) url("#liquid-glass-button-filter") brightness(1.02) saturate(1.03);
+    backdrop-filter: blur(8px) url("#liquid-glass-button-filter") brightness(1.02) saturate(1.03);
 }
 
 .liquid-glass__refract--card {
@@ -352,7 +356,7 @@ img {
 }
 
 .home-name {
-    margin: 0 0 18px;
+    margin: 0 0 8px;
     color: var(--text-main);
     font-family: var(--font-display);
     font-size: 42px;
@@ -366,6 +370,17 @@ img {
     font-style: italic;
 }
 
+.home-affiliation {
+    max-width: 672px;
+    margin: 0 0 22px;
+    color: var(--text-main);
+    font-family: var(--font-sans);
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.45;
+    letter-spacing: -0.005em;
+}
+
 .home-intro {
     max-width: 672px;
     margin: 0;
@@ -377,6 +392,16 @@ img {
 
 .home-intro a {
     color: var(--text-muted);
+}
+
+.home-contact {
+    max-width: 672px;
+    margin: 12px 0 0;
+    color: var(--text-muted);
+    font-family: var(--font-sans);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.65;
 }
 
 .home-photo-wrap {
@@ -468,25 +493,57 @@ img {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    min-height: 52px;
-    padding: 0 20px;
-    background: var(--button-bg);
-    border: 1px solid var(--line);
+    min-height: 46px;
+    padding: 0;
+    background: transparent;
+    border: 0;
     border-radius: 999px;
+    box-shadow:
+        0 8px 22px rgba(42, 58, 78, 0.07),
+        0 1px 4px rgba(42, 58, 78, 0.035);
     color: var(--text-main);
     font-family: var(--font-sans);
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 1;
     text-decoration: none;
-    transition: background 0.16s ease, transform 0.16s ease, opacity 0.16s ease;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 0.16s ease, opacity 0.16s ease;
+}
+
+.home-button > .liquid-glass__tint {
+    background: rgba(248, 251, 254, 0.48);
+    transition: background 0.16s ease;
+}
+
+.home-button > .liquid-glass__specular {
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.55),
+        inset 0 -1px 0 rgba(48, 54, 62, 0.09),
+        inset 1px 0 0 rgba(255, 255, 255, 0.12),
+        inset -1px 0 0 rgba(255, 255, 255, 0.1);
+}
+
+.home-button__content {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 46px;
+    padding: 0 17px;
 }
 
 .home-button:hover {
-    background: var(--button-hover);
     transform: translateY(-1px);
     opacity: 1;
+}
+
+.home-button:hover > .liquid-glass__tint {
+    background: rgba(248, 251, 254, 0.65);
+}
+
+.home-button:active {
+    transform: translateY(0);
 }
 
 .button-icon {
@@ -791,9 +848,18 @@ img {
         font-size: 34px;
     }
 
+    .home-affiliation {
+        margin-bottom: 18px;
+        font-size: 16px;
+    }
+
     .home-intro {
         font-size: 15.5px;
         line-height: 1.76;
+    }
+
+    .home-contact {
+        font-size: 14.5px;
     }
 
     .block-title {
@@ -806,8 +872,13 @@ img {
     }
 
     .home-button {
-        min-height: 50px;
-        padding: 0 18px;
+        min-height: 46px;
+        padding: 0;
+    }
+
+    .home-button__content {
+        min-height: 46px;
+        padding: 0 16px;
     }
 
     .research-section {
