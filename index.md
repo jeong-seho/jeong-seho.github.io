@@ -14,7 +14,9 @@ permalink: /
             I am a Master's student in Economics at Sogang University. I am interested in quantitatively analyzing how financial markets interact with the macroeconomy. My research focuses on how frictions in production sectors and financial intermediaries affect asset prices and corporate financing decisions.
         </p>
 
-        <p class="home-contact">Feel free to reach me at sehojeong [at] sogang [dot] ac [dot] kr.</p>
+        <p class="home-contact">
+            Feel free to reach me at sehojeong [at] sogang [dot] ac [dot] kr.
+        </p>
 
         <section class="home-block">
             <h2 class="block-title">Research Interests</h2>
