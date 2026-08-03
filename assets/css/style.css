@@ -356,7 +356,7 @@ img {
 }
 
 .home-name {
-    margin: 0 0 8px;
+    margin: 0 0 18px;
     color: var(--text-main);
     font-family: var(--font-display);
     font-size: 42px;
@@ -368,17 +368,6 @@ img {
 
 .home-family-name {
     font-style: italic;
-}
-
-.home-affiliation {
-    max-width: 672px;
-    margin: 0 0 22px;
-    color: var(--text-main);
-    font-family: var(--font-sans);
-    font-size: 17px;
-    font-weight: 600;
-    line-height: 1.45;
-    letter-spacing: -0.005em;
 }
 
 .home-intro {
@@ -846,11 +835,6 @@ img {
 
     .home-name {
         font-size: 34px;
-    }
-
-    .home-affiliation {
-        margin-bottom: 18px;
-        font-size: 16px;
     }
 
     .home-intro {

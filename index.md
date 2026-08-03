@@ -9,10 +9,9 @@ permalink: /
 <section id="home" class="home-hero page-section">
     <div class="home-main">
         <h1 class="home-name">Seho <span class="home-family-name">Jeong</span></h1>
-        <p class="home-affiliation">Master's Student in Economics at Sogang University</p>
 
         <p class="home-intro">
-            I am interested in quantitatively analyzing how financial markets interact with the macroeconomy. My research focuses on how frictions in production sectors and financial intermediaries affect asset prices and corporate financing decisions.
+            I am a Master's student in Economics at Sogang University. I am interested in quantitatively analyzing how financial markets interact with the macroeconomy. My research focuses on how frictions in production sectors and financial intermediaries affect asset prices and corporate financing decisions.
         </p>
 
         <p class="home-contact">Feel free to reach me at sehojeong [at] sogang [dot] ac [dot] kr.</p>
