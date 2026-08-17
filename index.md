@@ -94,8 +94,8 @@ permalink: /
 
                 <div class="paper-card-content liquid-glass__content">
                     <div class="paper-header">
-                        <h3 class="paper-title">Lorem ipsum dolor sit amet</h3>
-                        <p class="paper-authors">with John Doe</p>
+                        <h3 class="paper-title">Heterogeneous Investors and Entry into Corporate Bond Markets</h3>
+                        <p class="paper-authors">with Yoonsoo Lee</p>
                     </div>
 
                     <div class="paper-actions" role="group" aria-label="Project resources">
@@ -104,25 +104,27 @@ permalink: /
                             <span>Abstract</span>
                         </button>
 
-                        <a class="resource-link" href="#" download>
+                        <!-- <a class="resource-link" href="#" download>
                             <svg class="resource-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
                                 <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 0 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z"/>
                                 <path d="M5.5 7a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5"/>
                             </svg>
                             <span>Paper</span>
-                        </a>
+                        </a> -->
 
-                        <a class="resource-link" href="#" download>
+                        <!-- <a class="resource-link" href="#" download>
                             <svg class="resource-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
                                 <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 0 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z"/>
                                 <path d="M5.5 7a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5"/>
                             </svg>
                             <span>Slides</span>
-                        </a>
+                        </a> -->
                     </div>
 
                     <div class="abstract-body" id="abstract-paper-1" hidden>
-                        <p>Morbi pellentesque et diam ut dignissim. Aliquam hendrerit, leo eu malesuada viverra, diam ligula vehicula nibh, ac fermentum neque metus ut nisi. Quisque tincidunt nulla eget nisi rutrum convallis. In tempus purus massa. Donec at elit hendrerit, rhoncus mi a, hendrerit leo. Curabitur sed suscipit magna. Proin sagittis, nunc eget accumsan dapibus, sapien dolor scelerisque eros, et dictum tellus felis nec nunc. Etiam sed nibh at purus venenatis auctor eget ac augue. Integer malesuada leo a ornare congue. Morbi bibendum lectus nunc, quis consequat ex dapibus quis. Sed molestie condimentum commodo. Nullam placerat, odio in vestibulum interdum, ligula nisi eleifend ex, eget vestibulum enim erat ut nulla. Fusce lobortis cursus eros, et viverra dolor cursus eu. Etiam dui elit, lacinia tincidunt turpis ut, eleifend aliquet lectus.</p>
+                        <p>
+                            To be updated.
+                        </p>
                     </div>
                 </div>
             </article>
@@ -134,8 +136,8 @@ permalink: /
 
                 <div class="paper-card-content liquid-glass__content">
                     <div class="paper-header">
-                        <h3 class="paper-title">Nullam est nulla, convallis placerat purus ac</h3>
-                        <p class="paper-authors">with John Doe and Jane Doe</p>
+                        <h3 class="paper-title">The Effect of a Large Scale Issuance of State-Owned Company Bonds on the Corporate Bond Markets</h3>
+                        <p class="paper-authors">with Taewoong Jo, Jun Hee Kwak, and Yoonsoo Lee</p>
                     </div>
 
                     <div class="paper-actions" role="group" aria-label="Project resources">
@@ -146,7 +148,9 @@ permalink: /
                     </div>
 
                     <div class="abstract-body" id="abstract-paper-2" hidden>
-                        <p>Quisque accumsan vulputate erat id cursus. Etiam porttitor viverra mi, id mattis metus. Sed aliquam neque purus, sit amet suscipit mi posuere vitae. Proin ullamcorper risus quis ex tristique scelerisque. Aliquam efficitur commodo nisi vel sollicitudin. Donec pretium erat lorem, eu lacinia nisi gravida at. Donec facilisis ullamcorper dui quis fermentum. Mauris pharetra justo arcu, rhoncus vestibulum urna laoreet non. Nam consectetur sapien nec enim viverra pulvinar. Aliquam tincidunt convallis urna sit amet placerat. Fusce pretium dictum dapibus. Nunc varius pulvinar lorem, non mattis urna sagittis sed. Nullam vel felis dignissim, eleifend libero in, volutpat quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut cursus lectus quam, in porttitor libero dictum eget. Phasellus imperdiet sapien et odio lacinia, in porta nunc malesuada.</p>
+                        <p>
+                            To be updated.
+                        </p>
                     </div>
                 </div>
             </article>
