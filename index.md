@@ -94,8 +94,11 @@ permalink: /
 
                 <div class="paper-card-content liquid-glass__content">
                     <div class="paper-header">
-                        <h3 class="paper-title">Heterogeneous Investors and Entry into Corporate Bond Markets</h3>
-                        <p class="paper-authors">with Yoonsoo Lee</p>
+                        <h3 class="paper-title">Growing into Bond Markets: Firm Life Cycles and Bond Market Access</h3>
+                        <p class="paper-authors">
+                            with 
+                            <a href="https://sites.google.com/view/yoonsoolee/", target="_blank", rel="noopener noreferrer">Yoonsoo Lee</a>
+                        </p>
                     </div>
 
                     <div class="paper-actions" role="group" aria-label="Project resources">
@@ -137,7 +140,13 @@ permalink: /
                 <div class="paper-card-content liquid-glass__content">
                     <div class="paper-header">
                         <h3 class="paper-title">The Effect of a Large Scale Issuance of State-Owned Company Bonds on the Corporate Bond Markets</h3>
-                        <p class="paper-authors">with Taewoong Jo, Jun Hee Kwak, and Yoonsoo Lee</p>
+                        <p class="paper-authors">
+                            with 
+                            <a href="https://taewoongjo72.github.io/", target="_blank", rel="noopener noreferrer">Taewoong Jo</a>,
+                            <a href="https://sites.google.com/view/junheekwak/", target="_blank", rel="noopener noreferrer">Jun Hee Kwak</a>,
+                            and
+                            <a href="https://sites.google.com/view/yoonsoolee/", target="_blank", rel="noopener noreferrer">Yoonsoo Lee</a>
+                        </p>
                     </div>
 
                     <div class="paper-actions" role="group" aria-label="Project resources">
