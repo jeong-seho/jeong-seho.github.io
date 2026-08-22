@@ -427,7 +427,7 @@ img {
     border-radius: 50%;
     object-fit: cover;
     object-position: center;
-    transform: scale(3.00);
+    transform: scale(1.80);
     transform-origin: 50% 2.5%;
 }
 
