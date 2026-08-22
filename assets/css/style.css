@@ -371,12 +371,13 @@ img {
 }
 
 .home-intro {
-    max-width: 672px;
+    max-width: 64ch;
     margin: 0;
     color: var(--text-muted);
     font-family: var(--font-serif);
     font-size: 16px;
     line-height: 1.82;
+    text-wrap: pretty;
 }
 
 .home-intro a {
