@@ -836,7 +836,7 @@ img {
     white-space: nowrap;
 }
 
-.experience-role {
+.experience-entry-title {
     margin: 0;
     color: var(--text-main);
     font-family: var(--font-sans);
@@ -1035,7 +1035,7 @@ img {
         padding: 20px;
     }
 
-    .experience-role {
+    .experience-entry-title {
         font-size: 18px;
     }
 }

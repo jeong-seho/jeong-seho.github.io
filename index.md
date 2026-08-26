@@ -184,8 +184,8 @@ permalink: /
             <span class="liquid-glass__specular" aria-hidden="true"></span>
 
             <div class="experience-sheet-content liquid-glass__content">
-                <section class="experience-group" aria-labelledby="research-assistantships-title">
-                    <h3 id="research-assistantships-title" class="experience-group-title">Research Assistantships</h3>
+                <section class="experience-group" aria-labelledby="research-assistant-title">
+                    <h3 id="research-assistant-title" class="experience-group-title">Research Assistant</h3>
 
                     <ul class="experience-list">
                         <!-- Replace this placeholder with each research appointment. -->
@@ -193,16 +193,16 @@ permalink: /
                             <p class="experience-period">20XX – Present</p>
 
                             <div class="experience-details">
-                                <h4 class="experience-role">Research Assistant</h4>
-                                <p class="experience-affiliation">Institution · Supervisor</p>
+                                <h4 class="experience-entry-title">Advisor: Name</h4>
+                                <p class="experience-affiliation">Department · Institution</p>
                                 <p class="experience-note">Project or research area to be updated.</p>
                             </div>
                         </li>
                     </ul>
                 </section>
 
-                <section class="experience-group" aria-labelledby="teaching-assistantships-title">
-                    <h3 id="teaching-assistantships-title" class="experience-group-title">Teaching Assistantships</h3>
+                <section class="experience-group" aria-labelledby="teaching-assistant-title">
+                    <h3 id="teaching-assistant-title" class="experience-group-title">Teaching Assistant</h3>
 
                     <ul class="experience-list">
                         <!-- Replace this placeholder with each teaching appointment. -->
@@ -210,9 +210,9 @@ permalink: /
                             <p class="experience-period">20XX</p>
 
                             <div class="experience-details">
-                                <h4 class="experience-role">Teaching Assistant</h4>
-                                <p class="experience-affiliation">Course Title · Institution</p>
-                                <p class="experience-note">Instructor or course details to be updated.</p>
+                                <h4 class="experience-entry-title">Course Title</h4>
+                                <p class="experience-affiliation">Instructor: Name · Institution</p>
+                                <p class="experience-note">Course details to be updated.</p>
                             </div>
                         </li>
                     </ul>
