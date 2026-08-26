@@ -184,7 +184,7 @@ permalink: /
             <span class="liquid-glass__specular" aria-hidden="true"></span>
 
             <div class="experience-sheet-content liquid-glass__content">
-                <section class="experience-group" aria-labelledby="research-assistant-title">
+                <section class="experience-group experience-group--plain-list" aria-labelledby="research-assistant-title">
                     <h3 id="research-assistant-title" class="experience-group-title">Research Assistant</h3>
 
                     <ul class="experience-list">

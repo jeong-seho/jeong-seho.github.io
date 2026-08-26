@@ -825,6 +825,12 @@ img {
     border-top: 1px solid rgba(98, 93, 88, 0.12);
 }
 
+.experience-group--plain-list .experience-item + .experience-item {
+    margin-top: 24px;
+    padding-top: 0;
+    border-top: 0;
+}
+
 .experience-period {
     margin: 0;
     color: var(--text-muted);
