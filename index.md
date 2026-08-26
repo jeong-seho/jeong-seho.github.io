@@ -231,7 +231,7 @@ permalink: /
                     </ul>
                 </section>
 
-                <section class="experience-group experience-group--plain-list" aria-labelledby="teaching-assistant-title">
+                <section class="experience-group" aria-labelledby="teaching-assistant-title">
                     <h3 id="teaching-assistant-title" class="experience-group-title">Teaching Assistant</h3>
 
                     <ul class="experience-list">
@@ -253,8 +253,6 @@ permalink: /
                                 <p class="experience-affiliation">Instructor: Name · Institution</p>
                             </div>
                         </li>
-
-                        
                     </ul>
                 </section>
             </div>
