@@ -242,9 +242,19 @@ permalink: /
                             <div class="experience-details">
                                 <h4 class="experience-entry-title">Course Title</h4>
                                 <p class="experience-affiliation">Instructor: Name · Institution</p>
-                                <p class="experience-note">Course details to be updated.</p>
                             </div>
                         </li>
+
+                        <li class="experience-item">
+                            <p class="experience-period">20XX</p>
+
+                            <div class="experience-details">
+                                <h4 class="experience-entry-title">Course Title</h4>
+                                <p class="experience-affiliation">Instructor: Name · Institution</p>
+                            </div>
+                        </li>
+
+                        
                     </ul>
                 </section>
             </div>
