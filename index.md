@@ -190,11 +190,41 @@ permalink: /
                     <ul class="experience-list">
                         <!-- Replace this placeholder with each research appointment. -->
                         <li class="experience-item">
-                            <p class="experience-period">20XX – Present</p>
+                            <p class="experience-period">Sep. 2023 – Feb. 2025</p>
 
                             <div class="experience-details">
-                                <h4 class="experience-entry-title">Advisor: Name</h4>
-                                <p class="experience-affiliation">Department · Institution</p>
+                                <h4 class="experience-entry-title">Prof. Yoonsoo Lee</h4>
+                                <p class="experience-affiliation">Economics · Sogang University</p>
+                                <p class="experience-note">Project or research area to be updated.</p>
+                            </div>
+                        </li>
+
+                        <li class="experience-item">
+                            <p class="experience-period">Jun. 2025</p>
+
+                            <div class="experience-details">
+                                <h4 class="experience-entry-title">Prof. Daisoon Kim</h4>
+                                <p class="experience-affiliation">Economics · North Carolina State University</p>
+                                <p class="experience-note">Project or research area to be updated.</p>
+                            </div>
+                        </li>
+
+                        <li class="experience-item">
+                            <p class="experience-period">Sep. 2024 - Feb. 2025</p>
+
+                            <div class="experience-details">
+                                <h4 class="experience-entry-title">Prof. Sungbin Sohn</h4>
+                                <p class="experience-affiliation">Economics · Sogang University</p>
+                                <p class="experience-note">Project or research area to be updated.</p>
+                            </div>
+                        </li>
+
+                        <li class="experience-item">
+                            <p class="experience-period">Jul. 2023 - Aug. 2023</p>
+
+                            <div class="experience-details">
+                                <h4 class="experience-entry-title">Prof. Jaeho Kim</h4>
+                                <p class="experience-affiliation">Economics · Sogang University</p>
                                 <p class="experience-note">Project or research area to be updated.</p>
                             </div>
                         </li>
