@@ -237,20 +237,22 @@ permalink: /
                     <ul class="experience-list">
                         <!-- Replace this placeholder with each teaching appointment. -->
                         <li class="experience-item">
-                            <p class="experience-period">20XX</p>
+                            <p class="experience-period">2025</p>
 
                             <div class="experience-details">
-                                <h4 class="experience-entry-title">Course Title</h4>
-                                <p class="experience-affiliation">Instructor: Name · Institution</p>
+                                <h4 class="experience-entry-title">Prof. Yoonsoo Lee</h4>
+                                <p class="experience-affiliation">Economics · Sogang University</p>
+                                <p class="experience-note">Macroeconomics I, Topics on Business Cycle</p>
                             </div>
                         </li>
 
                         <li class="experience-item">
-                            <p class="experience-period">20XX</p>
+                            <p class="experience-period">2026</p>
 
                             <div class="experience-details">
-                                <h4 class="experience-entry-title">Course Title</h4>
-                                <p class="experience-affiliation">Instructor: Name · Institution</p>
+                                <h4 class="experience-entry-title">Prof. Jinwon Kim</h4>
+                                <p class="experience-affiliation">Economics · Sogang University</p>
+                                <p class="experience-note">Principle of Economics I, Transportation Economics, Urban Economics</p>
                             </div>
                         </li>
                     </ul>
