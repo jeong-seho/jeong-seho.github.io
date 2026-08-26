@@ -11,7 +11,7 @@ permalink: /
         <h1 class="home-name">Seho <span class="home-family-name">Jeong</span></h1>
 
         <p class="home-intro">
-            I am a Master's student in Economics at Sogang University. I am interested in quantitatively analyzing how financial markets interact with the macroeconomy. My research focuses on how frictions in production sectors and financial intermediaries affect asset prices and corporate financing decisions.
+            I am a Master's student in Economics at Sogang University. I am currently applying to Ph.D. programs in Economics and Finance for Fall 2027 admission. I am interested in quantitatively analyzing how financial markets interact with the macroeconomy. My research focuses on how frictions faced by firms and financial intermediaries shape asset prices, financing conditions, and the allocation of capital.
         </p>
 
         <p class="home-contact">
@@ -163,6 +163,61 @@ permalink: /
                     </div>
                 </div>
             </article>
+        </div>
+    </div>
+</section>
+
+
+<!-- ACADEMIC EXPERIENCE SECTION -->
+
+<section id="experience" class="experience-section page-section" aria-labelledby="experience-title">
+    <div class="experience-intro">
+        <p class="experience-kicker" aria-hidden="true">02</p>
+        <h2 id="experience-title" class="section-title">Academic Experience</h2>
+        <p class="experience-description">Research and teaching appointments</p>
+    </div>
+
+    <div class="experience-content">
+        <div class="experience-sheet liquid-glass">
+            <span class="liquid-glass__refract liquid-glass__refract--card" aria-hidden="true"></span>
+            <span class="liquid-glass__tint" aria-hidden="true"></span>
+            <span class="liquid-glass__specular" aria-hidden="true"></span>
+
+            <div class="experience-sheet-content liquid-glass__content">
+                <section class="experience-group" aria-labelledby="research-assistantships-title">
+                    <h3 id="research-assistantships-title" class="experience-group-title">Research Assistantships</h3>
+
+                    <ul class="experience-list">
+                        <!-- Replace this placeholder with each research appointment. -->
+                        <li class="experience-item">
+                            <p class="experience-period">20XX – Present</p>
+
+                            <div class="experience-details">
+                                <h4 class="experience-role">Research Assistant</h4>
+                                <p class="experience-affiliation">Institution · Supervisor</p>
+                                <p class="experience-note">Project or research area to be updated.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="experience-group" aria-labelledby="teaching-assistantships-title">
+                    <h3 id="teaching-assistantships-title" class="experience-group-title">Teaching Assistantships</h3>
+
+                    <ul class="experience-list">
+                        <!-- Replace this placeholder with each teaching appointment. -->
+                        <li class="experience-item">
+                            <p class="experience-period">20XX</p>
+
+                            <div class="experience-details">
+                                <h4 class="experience-role">Teaching Assistant</h4>
+                                <p class="experience-affiliation">Course Title · Institution</p>
+                                <p class="experience-note">Instructor or course details to be updated.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </div>
         </div>
     </div>
 </section>
