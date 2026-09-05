@@ -17,15 +17,14 @@ permalink: /
             I am currently applying to Ph.D. programs in Economics and Finance for Fall 2027 admission. I am interested in quantitatively analyzing how <span class="home-intro-emphasis">financial markets interact with the macroeconomy</span>. My research focuses on how frictions faced by <span class="home-intro-emphasis">firms and financial intermediaries</span> shape asset prices, financing conditions, and the allocation of capital.
         </p>
 
+        <p id="home-contact" class="home-contact">
+            Feel free to reach me at <span class="home-email">sehojeong [at] sogang [dot] ac [dot] kr</span>.
+        </p>
+
         <nav class="home-links" aria-label="Profile links">
             <a class="home-link" href="https://github.com/jeong-seho">GitHub</a>
-            <a class="home-link" href="#home-contact">Email</a>
             <a class="home-link" href="{{ '/assets/cv/cv.pdf' | relative_url }}">CV</a>
         </nav>
-
-        <p id="home-contact" class="home-contact" tabindex="-1">
-            Feel free to reach me at sehojeong [at] sogang [dot] ac [dot] kr.
-        </p>
     </div>
 
     <aside class="home-photo-wrap">
