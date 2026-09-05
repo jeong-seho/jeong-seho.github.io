@@ -6,7 +6,7 @@
     <title>{{ site.title }}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,700;1,700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,700;1,500;1,700&amp;display=swap">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
     <script src="{{ '/assets/js/main.js' | relative_url }}" defer></script>
 </head>
@@ -38,11 +38,6 @@
             <filter id="liquid-glass-profile-filter" color-interpolation-filters="sRGB" x="0%" y="0%" width="100%" height="100%">
                 <feImage result="profile-displacement" x="0" y="0" width="100%" height="100%" preserveAspectRatio="none" href="{{ '/assets/img/liquid-glass-profile.png' | relative_url }}" />
                 <feDisplacementMap in="SourceGraphic" in2="profile-displacement" scale="-20" xChannelSelector="R" yChannelSelector="G" />
-            </filter>
-
-            <filter id="liquid-glass-button-filter" color-interpolation-filters="sRGB" x="0%" y="0%" width="100%" height="100%">
-                <feImage id="liquid-glass-button-image" result="button-displacement" x="0" y="0" width="100%" height="100%" preserveAspectRatio="none" href="" />
-                <feDisplacementMap in="SourceGraphic" in2="button-displacement" scale="-14" xChannelSelector="R" yChannelSelector="G" />
             </filter>
         </defs>
     </svg>

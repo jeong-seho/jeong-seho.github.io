@@ -16,7 +16,6 @@ document.querySelectorAll(".abstract-button").forEach((button) => {
 
 const siteHeader = document.querySelector(".site-header");
 const navFilterImage = document.getElementById("liquid-glass-nav-image");
-const buttonFilterImage = document.getElementById("liquid-glass-button-image");
 
 const smoothstep = (start, end, value) => {
     const progress = Math.max(0, Math.min(1, (value - start) / (end - start)));
@@ -58,76 +57,6 @@ const buildNavDisplacementMap = () => {
     return canvas.toDataURL("image/png");
 };
 
-const roundedRectangleDistance = (x, y, width, height, radius) => {
-    const centeredX = x - width / 2;
-    const centeredY = y - height / 2;
-    const horizontal = Math.abs(centeredX) - (width / 2 - radius);
-    const vertical = Math.abs(centeredY) - (height / 2 - radius);
-    const innerDistance = Math.min(Math.max(horizontal, vertical), 0);
-    const outerDistance = Math.hypot(Math.max(horizontal, 0), Math.max(vertical, 0));
-
-    return innerDistance + outerDistance - radius;
-};
-
-const buildButtonDisplacementMap = () => {
-    const mapWidth = 140;
-    const mapHeight = 46;
-    const radius = 23;
-    const bezel = 11;
-    const centerX = mapWidth / 2;
-    const centerY = mapHeight / 2;
-    const canvas = document.createElement("canvas");
-    const context = canvas.getContext("2d");
-
-    if (!context) return "";
-
-    canvas.width = mapWidth;
-    canvas.height = mapHeight;
-
-    const image = context.createImageData(mapWidth, mapHeight);
-
-    for (let y = 0; y < mapHeight; y += 1) {
-        for (let x = 0; x < mapWidth; x += 1) {
-            const sampleX = x + 0.5;
-            const sampleY = y + 0.5;
-            const distance = roundedRectangleDistance(sampleX, sampleY, mapWidth, mapHeight, radius);
-            const pixelIndex = (y * mapWidth + x) * 4;
-            let red = 128;
-            let green = 128;
-
-            if (distance <= 0 && distance >= -bezel) {
-                const strength = smoothstep(-bezel, 0, distance);
-                const horizontal = centerX - sampleX;
-                const vertical = centerY - sampleY;
-                const vectorLength = Math.hypot(horizontal, vertical);
-
-                if (vectorLength > 0) {
-                    red = Math.round(128 + strength * (horizontal / vectorLength) * 127);
-                    green = Math.round(128 + strength * (vertical / vectorLength) * 127);
-                }
-            }
-
-            image.data[pixelIndex] = red;
-            image.data[pixelIndex + 1] = green;
-            image.data[pixelIndex + 2] = 0;
-            image.data[pixelIndex + 3] = 255;
-        }
-    }
-
-    context.putImageData(image, 0, 0);
-    return canvas.toDataURL("image/png");
-};
-
-const updateButtonRefraction = () => {
-    if (!buttonFilterImage) return;
-
-    const displacementMap = buildButtonDisplacementMap();
-
-    if (displacementMap) {
-        buttonFilterImage.setAttribute("href", displacementMap);
-    }
-};
-
 const updateNavRefraction = () => {
     if (!siteHeader || !navFilterImage) return;
 
@@ -165,5 +94,3 @@ if (siteHeader) {
         resizeTimer = window.setTimeout(updateNavRefraction, 80);
     }, { passive: true });
 }
-
-updateButtonRefraction();
