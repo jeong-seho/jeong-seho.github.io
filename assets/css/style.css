@@ -429,6 +429,14 @@ img {
     text-wrap: pretty;
 }
 
+.home-intro > p {
+    margin: 0;
+}
+
+.home-intro > p + p {
+    margin-top: 18px;
+}
+
 .home-intro-emphasis {
     color: var(--text-main);
 }
