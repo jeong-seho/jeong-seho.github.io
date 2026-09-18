@@ -14,7 +14,7 @@ permalink: /
         <p class="home-affiliation">Sogang University</p>
 
         <p class="home-intro">
-            I am currently applying to Ph.D. programs in Economics and Finance for Fall 2027 admission. I am interested in quantitatively analyzing how <span class="home-intro-emphasis">financial markets interact with the macroeconomy</span>. My research focuses on how frictions faced by <span class="home-intro-emphasis">firms and financial intermediaries</span> shape asset prices, financing conditions, and the allocation of capital.
+            I am applying to Ph.D. programs in Economics and Finance for Fall 2027 admission. I am interested in quantitatively analyzing how <span class="home-intro-emphasis">financial markets interact with the macroeconomy</span>. My research focuses on how frictions faced by <span class="home-intro-emphasis">firms and financial intermediaries</span> shape asset prices, financing conditions, and the allocation of capital.
         </p>
 
         <p id="home-contact" class="home-contact">
