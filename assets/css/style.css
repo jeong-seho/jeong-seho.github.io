@@ -27,8 +27,8 @@
 
     --surface-glass: rgba(var(--surface-rgb), 0.14);
     --surface-nav: rgba(var(--page-bg-rgb), 0.84);
-    --surface-paper: rgba(var(--surface-rgb), 0.78);
-    --surface-experience: rgba(var(--surface-rgb), 0.5);
+    --surface-paper: rgba(var(--page-bg-rgb), 0.78);
+    --surface-experience: rgba(var(--page-bg-rgb), 0.5);
     --surface-control: rgba(var(--surface-rgb), 0.42);
     --surface-control-active: rgba(var(--primary-rgb), 0.06);
     --border-control: rgba(var(--primary-rgb), 0.24);

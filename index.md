@@ -25,7 +25,7 @@ permalink: /
 
     <div class="home-main">
         <p class="home-intro">
-            I am applying to Ph.D. programs in Economics and Finance for Fall 2027 admission. I am interested in quantitatively analyzing how <span class="home-intro-emphasis">financial markets interact with the macroeconomy</span>. My research focuses on how frictions faced by <span class="home-intro-emphasis">firms and financial intermediaries</span> shape asset prices, financing conditions, and the allocation of capital.
+            I am applying to Ph.D. programs in Economics and Finance for Fall 2027. My research focuses on the interactions between financial markets and the macroeconomy. Specifically, I study how financial institutions and investors influence asset prices and firms’ financing conditions, as well as how financial shocks propagate across markets. I am also interested in the role of information production and processing in asset valuation.
         </p>
 
         <p id="home-contact" class="home-contact">
