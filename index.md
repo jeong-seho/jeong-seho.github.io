@@ -7,25 +7,12 @@ permalink: /
 <!-- HOME SECTION -->
 
 <section id="home" class="home-hero page-section">
-    <div class="home-main">
+    <header class="home-identity">
         <h1 class="home-name">Seho <span class="home-family-name">Jeong</span></h1>
 
         <p class="home-position">Master's Student in Economics</p>
         <p class="home-affiliation">Sogang University</p>
-
-        <p class="home-intro">
-            I am applying to Ph.D. programs in Economics and Finance for Fall 2027 admission. I am interested in quantitatively analyzing how <span class="home-intro-emphasis">financial markets interact with the macroeconomy</span>. My research focuses on how frictions faced by <span class="home-intro-emphasis">firms and financial intermediaries</span> shape asset prices, financing conditions, and the allocation of capital.
-        </p>
-
-        <p id="home-contact" class="home-contact">
-            Feel free to reach me at <span class="home-email">sehojeong [at] sogang [dot] ac [dot] kr</span>.
-        </p>
-
-        <nav class="home-links" aria-label="Profile links">
-            <a class="home-link" href="https://github.com/jeong-seho">GitHub</a>
-            <a class="home-link" href="{{ '/assets/cv/cv.pdf' | relative_url }}">CV</a>
-        </nav>
-    </div>
+    </header>
 
     <aside class="home-photo-wrap">
         <div class="home-photo-frame liquid-glass">
@@ -35,6 +22,21 @@ permalink: /
             <img src="/assets/img/profile.jpeg" alt="Seho Jeong" class="home-photo liquid-glass__content">
         </div>
     </aside>
+
+    <div class="home-main">
+        <p class="home-intro">
+            I am applying to Ph.D. programs in Economics and Finance for Fall 2027 admission. I am interested in quantitatively analyzing how <span class="home-intro-emphasis">financial markets interact with the macroeconomy</span>. My research focuses on how frictions faced by <span class="home-intro-emphasis">firms and financial intermediaries</span> shape asset prices, financing conditions, and the allocation of capital.
+        </p>
+
+        <p id="home-contact" class="home-contact">
+            Feel free to reach me at <span class="home-email">sehojeong [at] sogang [dot] ac [dot] kr</span>.
+        </p>
+
+        <nav class="home-links" aria-label="Profile links">
+            <a class="home-link" href="{{ '/assets/cv/cv.pdf' | relative_url }}">CV</a>
+            <a class="home-link" href="https://github.com/jeong-seho">GitHub</a>
+        </nav>
+    </div>
 
     <div class="home-details">
         <section class="home-block">
@@ -56,15 +58,13 @@ permalink: /
 
 <!-- RESEARCH SECTION -->
 
-<section id="research" class="research-section page-section">
+<section id="research" class="research-section page-section" aria-labelledby="research-title">
     <div class="research-intro">
-        <p class="research-kicker">01</p>
-        <h1 class="section-title">Research</h1>
-        <p class="research-description">Selected research projects</p>
+        <h2 id="research-title" class="section-title">Research</h2>
     </div>
 
     <div class="research-content">
-        <h2 class="research-group-title">Work in Progress</h2>
+        <h3 class="research-group-title">Work in Progress</h3>
 
         <div class="paper-list">
             <article class="paper-card liquid-glass">
@@ -74,7 +74,7 @@ permalink: /
 
                 <div class="paper-card-content liquid-glass__content">
                     <div class="paper-header">
-                        <h3 class="paper-title">Growing into Bond Markets: Firm Life Cycles and Bond Market Access</h3>
+                        <h4 class="paper-title">Growing into Bond Markets: Firm Life Cycles and Bond Market Access</h4>
                         <p class="paper-authors">
                             with 
                             <a href="https://sites.google.com/view/yoonsoolee/" target="_blank" rel="noopener noreferrer">Yoonsoo Lee</a>
@@ -119,7 +119,7 @@ permalink: /
 
                 <div class="paper-card-content liquid-glass__content">
                     <div class="paper-header">
-                        <h3 class="paper-title">The Effect of a Large Scale Issuance of State-Owned Company Bonds on the Corporate Bond Markets</h3>
+                        <h4 class="paper-title">The Effect of a Large Scale Issuance of State-Owned Company Bonds on the Corporate Bond Markets</h4>
                         <p class="paper-authors">
                             with 
                             <a href="https://taewoongjo72.github.io/" target="_blank" rel="noopener noreferrer">Taewoong Jo</a>,
@@ -152,9 +152,7 @@ permalink: /
 
 <section id="experience" class="experience-section page-section" aria-labelledby="experience-title">
     <div class="experience-intro">
-        <p class="experience-kicker" aria-hidden="true">02</p>
         <h2 id="experience-title" class="section-title">Academic Experience</h2>
-        <p class="experience-description">Research and teaching appointments</p>
     </div>
 
     <div class="experience-content">
@@ -170,16 +168,6 @@ permalink: /
                     <ul class="experience-list">
                         <!-- Replace this placeholder with each research appointment. -->
                         <li class="experience-item">
-                            <p class="experience-period">Sep. 2023 – Feb. 2025</p>
-
-                            <div class="experience-details">
-                                <h4 class="experience-entry-title">Prof. Yoonsoo Lee</h4>
-                                <p class="experience-affiliation">Economics · Sogang University</p>
-                                <p class="experience-note">Project or research area to be updated.</p>
-                            </div>
-                        </li>
-
-                        <li class="experience-item">
                             <p class="experience-period">Jun. 2025</p>
 
                             <div class="experience-details">
@@ -190,7 +178,7 @@ permalink: /
                         </li>
 
                         <li class="experience-item">
-                            <p class="experience-period">Sep. 2024 - Feb. 2025</p>
+                            <p class="experience-period">Sep. 2024 – Feb. 2025</p>
 
                             <div class="experience-details">
                                 <h4 class="experience-entry-title">Prof. Sungbin Sohn</h4>
@@ -200,7 +188,17 @@ permalink: /
                         </li>
 
                         <li class="experience-item">
-                            <p class="experience-period">Jul. 2023 - Aug. 2023</p>
+                            <p class="experience-period">Sep. 2023 – Feb. 2025</p>
+
+                            <div class="experience-details">
+                                <h4 class="experience-entry-title">Prof. Yoonsoo Lee</h4>
+                                <p class="experience-affiliation">Economics · Sogang University</p>
+                                <p class="experience-note">Project or research area to be updated.</p>
+                            </div>
+                        </li>
+
+                        <li class="experience-item">
+                            <p class="experience-period">Jul. 2023 – Aug. 2023</p>
 
                             <div class="experience-details">
                                 <h4 class="experience-entry-title">Prof. Jaeho Kim</h4>
@@ -217,22 +215,22 @@ permalink: /
                     <ul class="experience-list">
                         <!-- Replace this placeholder with each teaching appointment. -->
                         <li class="experience-item">
-                            <p class="experience-period">2025</p>
-
-                            <div class="experience-details">
-                                <h4 class="experience-entry-title">Prof. Yoonsoo Lee</h4>
-                                <p class="experience-affiliation">Economics · Sogang University</p>
-                                <p class="experience-note">Macroeconomics I, Topics on Business Cycle</p>
-                            </div>
-                        </li>
-
-                        <li class="experience-item">
                             <p class="experience-period">2026</p>
 
                             <div class="experience-details">
                                 <h4 class="experience-entry-title">Prof. Jinwon Kim</h4>
                                 <p class="experience-affiliation">Economics · Sogang University</p>
                                 <p class="experience-note">Principle of Economics I, Transportation Economics, Urban Economics</p>
+                            </div>
+                        </li>
+
+                        <li class="experience-item">
+                            <p class="experience-period">2025</p>
+
+                            <div class="experience-details">
+                                <h4 class="experience-entry-title">Prof. Yoonsoo Lee</h4>
+                                <p class="experience-affiliation">Economics · Sogang University</p>
+                                <p class="experience-note">Macroeconomics I, Topics on Business Cycle</p>
                             </div>
                         </li>
                     </ul>

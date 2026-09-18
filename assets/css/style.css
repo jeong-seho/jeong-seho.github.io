@@ -18,6 +18,7 @@
     --site-width: 1120px;
     --left-column: 672px;
     --photo-size: 312px;
+    --section-gap: 96px;
 
     --font-display: "Newsreader", Georgia, "Times New Roman", serif;
     --font-serif: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
@@ -73,7 +74,7 @@ body {
     left: -210px;
     width: 680px;
     height: 680px;
-    background: radial-gradient(circle, rgba(69, 116, 184, 0.24) 0%, rgba(69, 116, 184, 0.1) 46%, transparent 72%);
+    background: radial-gradient(circle, rgba(69, 116, 184, 0.14) 0%, rgba(69, 116, 184, 0.06) 46%, transparent 72%);
 }
 
 .background-orb--two {
@@ -81,7 +82,7 @@ body {
     right: -150px;
     width: 540px;
     height: 540px;
-    background: radial-gradient(circle, rgba(76, 163, 222, 0.21) 0%, rgba(76, 163, 222, 0.08) 48%, transparent 72%);
+    background: radial-gradient(circle, rgba(76, 163, 222, 0.12) 0%, rgba(76, 163, 222, 0.045) 48%, transparent 72%);
 }
 
 .background-orb--three {
@@ -89,7 +90,7 @@ body {
     left: 28%;
     width: 640px;
     height: 640px;
-    background: radial-gradient(circle, rgba(100, 140, 198, 0.19) 0%, rgba(100, 140, 198, 0.075) 48%, transparent 72%);
+    background: radial-gradient(circle, rgba(100, 140, 198, 0.11) 0%, rgba(100, 140, 198, 0.04) 48%, transparent 72%);
 }
 
 a {
@@ -273,8 +274,8 @@ img {
     gap: 18px;
     font-family: var(--font-sans);
     font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 0.14em;
+    font-weight: 600;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
 }
 
@@ -339,20 +340,33 @@ img {
 .home-hero {
     display: grid;
     grid-template-columns: minmax(0, var(--left-column)) var(--photo-size);
+    grid-template-areas:
+        "identity portrait"
+        "main portrait"
+        "details details";
     column-gap: clamp(40px, 7vw, 96px);
     align-items: start;
     padding-top: clamp(28px, 3.5vw, 40px);
 }
 
+.home-identity,
 .home-main {
     min-width: 0;
+}
+
+.home-identity {
+    grid-area: identity;
+}
+
+.home-main {
+    grid-area: main;
 }
 
 .home-name {
     margin: 0 0 20px;
     color: var(--text-main);
     font-family: var(--font-display);
-    font-size: 48px;
+    font-size: 52px;
     font-weight: 500;
     line-height: 1.1;
     letter-spacing: -0.015em;
@@ -417,6 +431,7 @@ img {
 }
 
 .home-photo-wrap {
+    grid-area: portrait;
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
@@ -428,8 +443,8 @@ img {
     padding: 5px;
     border-radius: 50%;
     box-shadow:
-        0 18px 44px rgba(42, 58, 78, 0.08),
-        0 2px 8px rgba(42, 58, 78, 0.035);
+        0 10px 28px rgba(42, 58, 78, 0.045),
+        0 1px 4px rgba(42, 58, 78, 0.02);
 }
 
 .home-photo-frame > .liquid-glass__tint {
@@ -438,10 +453,10 @@ img {
 
 .home-photo-frame > .liquid-glass__specular {
     box-shadow:
-        inset 0 1px 0 rgba(255, 255, 255, 0.3),
-        inset 0 -1px 0 rgba(50, 57, 66, 0.09),
-        inset 1px 0 0 rgba(255, 255, 255, 0.1),
-        inset -1px 0 0 rgba(255, 255, 255, 0.08);
+        inset 0 1px 0 rgba(255, 255, 255, 0.22),
+        inset 0 -1px 0 rgba(50, 57, 66, 0.06),
+        inset 1px 0 0 rgba(255, 255, 255, 0.08),
+        inset -1px 0 0 rgba(255, 255, 255, 0.06);
 }
 
 .home-photo {
@@ -455,11 +470,11 @@ img {
 }
 
 .home-details {
-    grid-column: 1 / -1;
+    grid-area: details;
     display: grid;
     grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
-    gap: 32px 64px;
-    margin-top: 48px;
+    gap: 28px 64px;
+    margin-top: 40px;
     font-family: var(--font-sans);
 }
 
@@ -468,15 +483,15 @@ img {
 }
 
 .block-title {
-    margin: 0 0 16px;
+    margin: 0 0 12px;
     padding: 0;
     border: 0;
     color: var(--text-muted);
     font-family: var(--font-sans);
     font-size: 13px;
-    font-weight: 700;
-    line-height: 1;
-    letter-spacing: 0.32em;
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: 0.12em;
     text-transform: uppercase;
 }
 
@@ -552,11 +567,7 @@ img {
     grid-template-columns: minmax(180px, 240px) minmax(0, 1fr);
     gap: clamp(42px, 7vw, 88px);
     align-items: start;
-    padding-top: 20px;
-}
-
-.research-section {
-    margin-top: 108px;
+    margin-top: var(--section-gap);
 }
 
 .research-intro,
@@ -565,36 +576,17 @@ img {
     top: 88px;
 }
 
-.research-kicker,
-.experience-kicker {
-    margin: 0 0 10px;
-    color: var(--text-muted);
-    font-family: var(--font-sans);
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 0.24em;
-    text-transform: uppercase;
-}
-
 .research-intro .section-title,
 .experience-intro .section-title {
     margin: 0;
     color: var(--text-main);
     font-family: var(--font-display);
-    font-size: clamp(36px, 4.3vw, 52px);
-    font-weight: 700;
-    line-height: 1.08;
-    letter-spacing: -0.035em;
+    font-size: clamp(38px, 3.4vw, 42px);
+    font-weight: 500;
+    line-height: 1.12;
+    letter-spacing: -0.02em;
     font-optical-sizing: auto;
-}
-
-.research-description,
-.experience-description {
-    max-width: 220px;
-    margin: 18px 0 0;
-    color: var(--text-muted);
-    font-size: 15px;
-    line-height: 1.65;
+    text-wrap: balance;
 }
 
 .research-content,
@@ -607,9 +599,9 @@ img {
     color: var(--text-muted);
     font-family: var(--font-sans);
     font-size: 13px;
-    font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: 0.22em;
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: 0.12em;
     text-transform: uppercase;
 }
 
@@ -619,10 +611,8 @@ img {
 }
 
 .paper-card {
-    border-radius: 14px;
-    box-shadow:
-        0 18px 48px rgba(42, 58, 78, 0.075),
-        0 2px 8px rgba(42, 58, 78, 0.035);
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(20, 35, 55, 0.04);
 }
 
 .paper-card > .liquid-glass__tint {
@@ -631,10 +621,10 @@ img {
 
 .paper-card > .liquid-glass__specular {
     box-shadow:
-        inset 0 1px 0 rgba(255, 255, 255, 0.44),
-        inset 0 -1px 0 rgba(48, 54, 62, 0.09),
-        inset 1px 0 0 rgba(255, 255, 255, 0.14),
-        inset -1px 0 0 rgba(255, 255, 255, 0.12);
+        inset 0 1px 0 rgba(255, 255, 255, 0.32),
+        inset 0 -1px 0 rgba(48, 54, 62, 0.055),
+        inset 1px 0 0 rgba(255, 255, 255, 0.1),
+        inset -1px 0 0 rgba(255, 255, 255, 0.08);
 }
 
 .paper-card-content {
@@ -645,8 +635,8 @@ img {
     margin: 0;
     color: var(--text-main);
     font-family: var(--font-serif);
-    font-size: clamp(18px, 2.2vw, 21px);
-    font-weight: 700;
+    font-size: clamp(20px, 2.2vw, 21px);
+    font-weight: 600;
     line-height: 1.42;
     letter-spacing: -0.012em;
 }
@@ -758,27 +748,21 @@ img {
    Academic Experience
 ============================================================ */
 
-.experience-section {
-    margin-top: 132px;
-}
-
 .experience-sheet {
-    border-radius: 14px;
-    box-shadow:
-        0 18px 48px rgba(42, 58, 78, 0.065),
-        0 2px 8px rgba(42, 58, 78, 0.03);
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(20, 35, 55, 0.02);
 }
 
 .experience-sheet > .liquid-glass__tint {
-    background: rgba(248, 251, 254, 0.58);
+    background: rgba(248, 251, 254, 0.5);
 }
 
 .experience-sheet > .liquid-glass__specular {
     box-shadow:
-        inset 0 1px 0 rgba(255, 255, 255, 0.4),
-        inset 0 -1px 0 rgba(48, 54, 62, 0.075),
-        inset 1px 0 0 rgba(255, 255, 255, 0.12),
-        inset -1px 0 0 rgba(255, 255, 255, 0.1);
+        inset 0 1px 0 rgba(255, 255, 255, 0.24),
+        inset 0 -1px 0 rgba(48, 54, 62, 0.04),
+        inset 1px 0 0 rgba(255, 255, 255, 0.06),
+        inset -1px 0 0 rgba(255, 255, 255, 0.05);
 }
 
 .experience-sheet-content {
@@ -796,9 +780,9 @@ img {
     color: var(--text-muted);
     font-family: var(--font-sans);
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1.3;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.12em;
     text-transform: uppercase;
 }
 
@@ -810,8 +794,8 @@ img {
 
 .experience-item {
     display: grid;
-    grid-template-columns: minmax(112px, 132px) minmax(0, 1fr);
-    gap: clamp(22px, 4vw, 40px);
+    grid-template-columns: 156px minmax(0, 1fr);
+    gap: 24px;
     align-items: baseline;
     padding: 20px 0 0;
 }
@@ -832,7 +816,7 @@ img {
     color: var(--text-muted);
     font-family: var(--font-sans);
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.5;
     font-variant-numeric: tabular-nums;
     white-space: nowrap;
@@ -842,8 +826,8 @@ img {
     margin: 0;
     color: var(--text-main);
     font-family: var(--font-sans);
-    font-size: 19px;
-    font-weight: 700;
+    font-size: 18px;
+    font-weight: 600;
     line-height: 1.4;
     letter-spacing: -0.01em;
 }
@@ -878,46 +862,43 @@ img {
 }
 
 @media (max-width: 860px) {
+    :root {
+        --photo-size: 180px;
+        --section-gap: 88px;
+    }
+
     .home-hero {
         grid-template-columns: 1fr;
-        row-gap: 34px;
+        grid-template-areas:
+            "identity"
+            "portrait"
+            "main"
+            "details";
+        row-gap: 24px;
     }
 
     .home-photo-wrap {
-        order: -1;
         justify-content: flex-start;
     }
 
-    .home-photo-frame {
-        width: 230px;
-        height: 230px;
-        padding: 5px;
+    .home-intro {
+        margin-top: 0;
     }
 
     .home-details {
         grid-template-columns: 1fr;
-        margin-top: 6px;
+        margin-top: 8px;
     }
 
     .research-section,
     .experience-section {
         grid-template-columns: 1fr;
-        gap: 38px;
-        margin-top: 88px;
+        gap: 24px;
     }
 
     .research-intro,
     .experience-intro {
         position: static;
-    }
-
-    .research-description,
-    .experience-description {
-        max-width: 420px;
-    }
-
-    .experience-section {
-        margin-top: 96px;
     }
 }
 
@@ -966,10 +947,6 @@ img {
         font-size: 40px;
     }
 
-    .home-intro {
-        margin-top: 24px;
-    }
-
     .home-intro,
     .home-contact {
         font-size: 19px;
@@ -977,12 +954,11 @@ img {
 
     .block-title {
         font-size: 12px;
-        letter-spacing: 0.25em;
     }
 
-    .research-section,
-    .experience-section {
-        padding-top: 8px;
+    .research-intro .section-title,
+    .experience-intro .section-title {
+        font-size: 34px;
     }
 
     .experience-item {
@@ -996,30 +972,16 @@ img {
 }
 
 @media (max-width: 430px) {
+    :root {
+        --photo-size: 160px;
+    }
+
     .home-photo-frame {
-        width: 200px;
-        height: 200px;
         padding: 4px;
-    }
-
-    .home-name {
-        font-size: 36px;
-    }
-
-    .paper-card {
-        border-radius: 12px;
-    }
-
-    .experience-sheet {
-        border-radius: 12px;
     }
 
     .experience-sheet-content {
         padding: 20px;
-    }
-
-    .experience-entry-title {
-        font-size: 18px;
     }
 }
 
