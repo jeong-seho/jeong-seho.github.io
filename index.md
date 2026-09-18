@@ -26,7 +26,7 @@ permalink: /
     <div class="home-main">
         <div class="home-intro">
             <p>
-            I am a master's student in Economics, applying to Ph.D. programs in Economics and Finance for Fall 2027.
+            I am a Master's student in Economics, applying to Ph.D. programs in Economics and Finance for Fall 2027.
             </p>
 
             <p>
