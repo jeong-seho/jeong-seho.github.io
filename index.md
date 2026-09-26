@@ -125,7 +125,7 @@ permalink: /
 
                 <div class="paper-card-content liquid-glass__content">
                     <div class="paper-header">
-                        <h4 class="paper-title">The Effect of a Large Scale Issuance of State-Owned Company Bonds on the Corporate Bond Markets</h4>
+                        <h4 class="paper-title">Crowded Out, Crowding Out: State-Owned Enterprise Debt and the Reallocation of Bank Credit</h4>
                         <p class="paper-authors">
                             with 
                             <a href="https://taewoongjo72.github.io/" target="_blank" rel="noopener noreferrer">Taewoong Jo</a>,
