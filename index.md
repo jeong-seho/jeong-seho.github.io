@@ -80,7 +80,7 @@ permalink: /
 
                 <div class="paper-card-content liquid-glass__content">
                     <div class="paper-header">
-                        <h4 class="paper-title">Growing into Bond Markets: Firm Life Cycles and Bond Market Access</h4>
+                        <h4 class="paper-title">Growing into Bond Markets</h4>
                         <p class="paper-authors">
                             with 
                             <a href="https://sites.google.com/view/yoonsoolee/" target="_blank" rel="noopener noreferrer">Yoonsoo Lee</a>
@@ -90,7 +90,7 @@ permalink: /
                     <!-- Replace with actual conference/seminar names and years; remove if not applicable. -->
                     <dl class="paper-presentations">
                         <dt>Presented at</dt>
-                        <dd>To be updated.</dd>
+                        <dd>2026 KER International Conference, Sogang Global Symposium on the Frontiers of Economics, 2026 KIEA Summer Conference</dd>
                     </dl>
 
                     <div class="paper-actions" role="group" aria-label="Project resources">
@@ -99,13 +99,14 @@ permalink: /
                             <span>Abstract</span>
                         </button>
 
-                        <!-- <a class="resource-link" href="#" download>
+                        <!-- Once the PDF is available, use an <a class="resource-link" href="..." download> with the same icon and label. -->
+                        <button class="resource-link" type="button" disabled title="Draft PDF not yet available">
                             <svg class="resource-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
                                 <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 0 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z"/>
                                 <path d="M5.5 7a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5"/>
                             </svg>
-                            <span>Paper</span>
-                        </a> -->
+                            <span>Draft</span>
+                        </button>
 
                         <!-- <a class="resource-link" href="#" download>
                             <svg class="resource-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">

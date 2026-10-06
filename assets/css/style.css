@@ -773,7 +773,7 @@ img {
     opacity: 0;
 }
 
-.resource-link:hover,
+.resource-link:hover:not(:disabled),
 .resource-link:focus-visible,
 .abstract-button[aria-expanded="true"] {
     background: var(--surface-control-active);
@@ -784,6 +784,13 @@ img {
 .resource-link:focus-visible {
     outline: 2px solid var(--color-primary-hover);
     outline-offset: 3px;
+}
+
+.resource-link:disabled {
+    background: var(--surface-control);
+    border-color: var(--border-color);
+    color: var(--text-muted);
+    cursor: default;
 }
 
 .abstract-body {
