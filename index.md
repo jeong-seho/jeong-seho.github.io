@@ -88,9 +88,10 @@ permalink: /
                     </div>
 
                     <!-- Replace with actual conference/seminar names and years; remove if not applicable. -->
-                    <p class="paper-presentations">
-                        <span class="paper-presentations-label">Presented at</span> To be updated.
-                    </p>
+                    <dl class="paper-presentations">
+                        <dt>Presented at</dt>
+                        <dd>To be updated.</dd>
+                    </dl>
 
                     <div class="paper-actions" role="group" aria-label="Project resources">
                         <button class="resource-link abstract-button" type="button" aria-expanded="false" aria-controls="abstract-paper-1">
@@ -117,7 +118,7 @@ permalink: /
 
                     <div class="abstract-body" id="abstract-paper-1" hidden>
                         <p>
-                            To be updated.
+                            We study empirically and theoretically how firms grow into bond markets and how this process shapes aggregate corporate debt structure. Using Korean firm-level data, we document that bond market participation rises sharply over the firm life cycle, while the bond share of debt among issuers varies little with age. We then decompose aggregate bond share into bond market participation, issuers' relative debt scale, and the bond share of issuer's debt. We show that rising participation is offset by a substantial decline in issuers' relative debt scale. To interpret this joint dynamics, we develop a heterogeneous firm model in which firms choose investment and debt structure. Improvements in bank financing disproportionately expand non-issuers, reducing issuers' relative debt scale, while the resulting firm growth raises subsequent entry into bond markets. Thus bank loans and bonds can be static substitutes but dynamic complements through firm growth.
                         </p>
                     </div>
                 </div>
