@@ -88,10 +88,9 @@ permalink: /
                     </div>
 
                     <!-- Replace with actual conference/seminar names and years; remove if not applicable. -->
-                    <dl class="paper-presentations">
-                        <dt>Presented at</dt>
-                        <dd>To be updated.</dd>
-                    </dl>
+                    <p class="paper-presentations">
+                        <span class="paper-presentations-label">Presented at</span> To be updated.
+                    </p>
 
                     <div class="paper-actions" role="group" aria-label="Project resources">
                         <button class="resource-link abstract-button" type="button" aria-expanded="false" aria-controls="abstract-paper-1">
