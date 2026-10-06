@@ -30,7 +30,7 @@ permalink: /
             </p>
 
             <p>
-            My research focuses on the interactions between financial markets and the macroeconomy. Specifically, I study how financial institutions and investors influence asset prices and firms’ financing conditions, as well as how financial shocks propagate across markets. I am also interested in the role of information production and processing in asset valuation.
+            My research focuses on the interactions between financial markets and the macroeconomy. Specifically, I study how financial institutions influence asset prices and firms’ financing conditions, as well as how financial shocks propagate across markets. I am also interested in the role of information production and processing in asset valuation.
             </p>
         </div>
 
@@ -70,7 +70,7 @@ permalink: /
     </div>
 
     <div class="research-content">
-        <h3 class="research-group-title">Work in Progress</h3>
+        <h3 class="research-group-title">Working Papers</h3>
 
         <div class="paper-list">
             <article class="paper-card liquid-glass">
@@ -86,6 +86,12 @@ permalink: /
                             <a href="https://sites.google.com/view/yoonsoolee/" target="_blank" rel="noopener noreferrer">Yoonsoo Lee</a>
                         </p>
                     </div>
+
+                    <!-- Replace with actual conference/seminar names and years; remove if not applicable. -->
+                    <dl class="paper-presentations">
+                        <dt>Presented at</dt>
+                        <dd>To be updated.</dd>
+                    </dl>
 
                     <div class="paper-actions" role="group" aria-label="Project resources">
                         <button class="resource-link abstract-button" type="button" aria-expanded="false" aria-controls="abstract-paper-1">
@@ -117,7 +123,11 @@ permalink: /
                     </div>
                 </div>
             </article>
+        </div>
 
+        <h3 class="research-group-title">Work in Progress</h3>
+
+        <div class="paper-list">
             <article class="paper-card liquid-glass">
                 <span class="liquid-glass__refract liquid-glass__refract--card" aria-hidden="true"></span>
                 <span class="liquid-glass__tint" aria-hidden="true"></span>
@@ -132,19 +142,6 @@ permalink: /
                             <a href="https://sites.google.com/view/junheekwak/" target="_blank" rel="noopener noreferrer">Jun Hee Kwak</a>,
                             and
                             <a href="https://sites.google.com/view/yoonsoolee/" target="_blank" rel="noopener noreferrer">Yoonsoo Lee</a>
-                        </p>
-                    </div>
-
-                    <div class="paper-actions" role="group" aria-label="Project resources">
-                        <button class="resource-link abstract-button" type="button" aria-expanded="false" aria-controls="abstract-paper-2">
-                            <span class="abstract-toggle" aria-hidden="true"></span>
-                            <span>Abstract</span>
-                        </button>
-                    </div>
-
-                    <div class="abstract-body" id="abstract-paper-2" hidden>
-                        <p>
-                            To be updated.
                         </p>
                     </div>
                 </div>
