@@ -8,7 +8,7 @@ permalink: /
 
 <section id="home" class="home-hero page-section">
     <header class="home-identity">
-        <h1 class="home-name">Seho <span class="home-family-name">Jeong</span></h1>
+        <h1 class="home-name">Seho Jeong</h1>
 
         <p class="home-position">Master's Student in Economics</p>
         <p class="home-affiliation">Sogang University</p>
