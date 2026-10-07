@@ -144,6 +144,24 @@ permalink: /
                 </div>
             </article>
         </div>
+
+        <div class="paper-list">
+            <article class="paper-card liquid-glass">
+                <span class="liquid-glass__refract liquid-glass__refract--card" aria-hidden="true"></span>
+                <span class="liquid-glass__tint" aria-hidden="true"></span>
+                <span class="liquid-glass__specular" aria-hidden="true"></span>
+
+                <div class="paper-card-content liquid-glass__content">
+                    <div class="paper-header">
+                        <h4 class="paper-title">Single-Stock Leveraged ETFs</h4>
+                        <p class="paper-authors">
+                            with 
+                            <a href="https://sites.google.com/view/yoonsoolee/" target="_blank" rel="noopener noreferrer">Yoonsoo Lee</a>
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </div>
     </div>
 </section>
 
