@@ -11,15 +11,15 @@
 }
 
 :root {
-    /* Dancheong-inspired UI colors, interpreted for this website. */
-    --page-bg: #FBFAF5;
+    /* Neutral light surfaces with Dancheong-inspired blue accents. */
+    --page-bg: #F5F6F7;
     --text-main: #182128;
     --text-muted: #59636A;
     --color-primary: #1B6387;
     --color-primary-hover: #144B68;
-    --border-color: #E4E1D8;
+    --border-color: #DEE3E7;
 
-    --page-bg-rgb: 251, 250, 245;
+    --page-bg-rgb: 245, 246, 247;
     --surface-rgb: 255, 255, 255;
     --ink-rgb: 24, 33, 40;
     --primary-rgb: 27, 99, 135;
