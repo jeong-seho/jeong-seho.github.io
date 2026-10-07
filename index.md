@@ -143,9 +143,7 @@ permalink: /
                     </div>
                 </div>
             </article>
-        </div>
 
-        <div class="paper-list">
             <article class="paper-card liquid-glass">
                 <span class="liquid-glass__refract liquid-glass__refract--card" aria-hidden="true"></span>
                 <span class="liquid-glass__tint" aria-hidden="true"></span>
