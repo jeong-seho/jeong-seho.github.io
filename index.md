@@ -26,11 +26,7 @@ permalink: /
     <div class="home-main">
         <div class="home-intro">
             <p>
-            I am a Master's student in Economics, applying to Ph.D. programs in Economics and Finance for Fall 2027.
-            </p>
-
-            <p>
-            I am interested in how heterogeneity across firms and investors shapes financial markets and the macroeconomy. 
+            I am a Master's student in Economics, applying to Ph.D. programs in Economics and Finance for Fall 2027. I am interested in how heterogeneity across firms and investors shapes financial markets and the macroeconomy. 
             </p>
         </div>
 
