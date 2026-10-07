@@ -30,7 +30,7 @@ permalink: /
             </p>
 
             <p>
-            My research focuses on the interactions between financial markets and the macroeconomy. Specifically, I study how financial institutions influence asset prices and firms’ financing conditions, as well as how financial shocks propagate across markets. I am also interested in the role of information production and processing in asset valuation.
+            I am interested in how heterogeneity across firms and investors shapes financial markets and the macroeconomy. 
             </p>
         </div>
 
