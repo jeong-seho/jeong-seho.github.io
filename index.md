@@ -159,6 +159,21 @@ permalink: /
                     </div>
                 </div>
             </article>
+
+            <article class="paper-card liquid-glass">
+                <span class="liquid-glass__refract liquid-glass__refract--card" aria-hidden="true"></span>
+                <span class="liquid-glass__tint" aria-hidden="true"></span>
+                <span class="liquid-glass__specular" aria-hidden="true"></span>
+
+                <div class="paper-card-content liquid-glass__content">
+                    <div class="paper-header">
+                        <h4 class="paper-title">Data Economy of Factor Zoo</h4>
+                        <p class="paper-authors">
+                            Sole author
+                        </p>
+                    </div>
+                </div>
+            </article>
         </div>
     </div>
 </section>
