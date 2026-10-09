@@ -225,7 +225,7 @@ permalink: /
                         </li>
 
                         <li class="experience-item">
-                            <p class="experience-period">Jul. 2023 – Aug. 2023</p>
+                            <p class="experience-period">2023</p>
 
                             <div class="experience-details">
                                 <h4 class="experience-entry-title">Prof. Jaeho Kim</h4>
