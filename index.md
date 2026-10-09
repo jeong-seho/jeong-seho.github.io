@@ -198,7 +198,7 @@ permalink: /
 
                     <ul class="experience-list">
                         <li class="experience-item">
-                            <p class="experience-period">Jun. 2025</p>
+                            <p class="experience-period">2025</p>
 
                             <div class="experience-details">
                                 <h4 class="experience-entry-title">Prof. Daisoon Kim</h4>
@@ -207,7 +207,7 @@ permalink: /
                         </li>
 
                         <li class="experience-item">
-                            <p class="experience-period">Sep. 2024 – Feb. 2025</p>
+                            <p class="experience-period">2024 – 2025</p>
 
                             <div class="experience-details">
                                 <h4 class="experience-entry-title">Prof. Sungbin Sohn</h4>
@@ -216,7 +216,7 @@ permalink: /
                         </li>
 
                         <li class="experience-item">
-                            <p class="experience-period">Sep. 2023 – Feb. 2025</p>
+                            <p class="experience-period">2023 – 2025</p>
 
                             <div class="experience-details">
                                 <h4 class="experience-entry-title">Prof. Yoonsoo Lee</h4>
@@ -283,6 +283,16 @@ permalink: /
                                 <h4 class="experience-entry-title">Tutor</h4>
                                 <p class="experience-affiliation">Economics Study Center · Sogang University</p>
                                 <p class="experience-note">Macroeconomics I, Topics on Business Cycle, Stock and Bond Markets</p>
+                            </div>
+                        </li>
+
+                        <li class="experience-item">
+                            <p class="experience-period">2025</p>
+
+                            <div class="experience-details">
+                                <h4 class="experience-entry-title">Instructor</h4>
+                                <p class="experience-affiliation">Moseori Economics Society · Sogang University</p>
+                                <p class="experience-note">Python Bootcamp for Economic Research</p>
                             </div>
                         </li>
                     </ul>
