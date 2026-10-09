@@ -932,14 +932,13 @@ img {
         grid-template-columns: 1fr;
         grid-template-areas:
             "identity"
-            "portrait"
             "main"
             "details";
         row-gap: 24px;
     }
 
     .home-photo-wrap {
-        justify-content: flex-start;
+        display: none;
     }
 
     .home-intro {
