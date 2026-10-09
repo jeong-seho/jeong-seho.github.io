@@ -291,7 +291,7 @@ permalink: /
 
                             <div class="experience-details">
                                 <h4 class="experience-entry-title">Instructor</h4>
-                                <p class="experience-affiliation">Moseori Economics Society · Sogang University</p>
+                                <p class="experience-affiliation">Moseori Economic Society · Sogang University</p>
                                 <p class="experience-note">Python Bootcamp for Economic Research</p>
                             </div>
                         </li>
