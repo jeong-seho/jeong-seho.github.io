@@ -197,14 +197,12 @@ permalink: /
                     <h3 id="research-assistant-title" class="experience-group-title">Research Assistant</h3>
 
                     <ul class="experience-list">
-                        <!-- Replace this placeholder with each research appointment. -->
                         <li class="experience-item">
                             <p class="experience-period">Jun. 2025</p>
 
                             <div class="experience-details">
                                 <h4 class="experience-entry-title">Prof. Daisoon Kim</h4>
                                 <p class="experience-affiliation">Economics · North Carolina State University</p>
-                                <p class="experience-note">Project or research area to be updated.</p>
                             </div>
                         </li>
 
@@ -214,7 +212,6 @@ permalink: /
                             <div class="experience-details">
                                 <h4 class="experience-entry-title">Prof. Sungbin Sohn</h4>
                                 <p class="experience-affiliation">Economics · Sogang University</p>
-                                <p class="experience-note">Project or research area to be updated.</p>
                             </div>
                         </li>
 
@@ -224,7 +221,6 @@ permalink: /
                             <div class="experience-details">
                                 <h4 class="experience-entry-title">Prof. Yoonsoo Lee</h4>
                                 <p class="experience-affiliation">Economics · Sogang University</p>
-                                <p class="experience-note">Project or research area to be updated.</p>
                             </div>
                         </li>
 
@@ -234,7 +230,6 @@ permalink: /
                             <div class="experience-details">
                                 <h4 class="experience-entry-title">Prof. Jaeho Kim</h4>
                                 <p class="experience-affiliation">Economics · Sogang University</p>
-                                <p class="experience-note">Project or research area to be updated.</p>
                             </div>
                         </li>
                     </ul>
@@ -262,6 +257,32 @@ permalink: /
                                 <h4 class="experience-entry-title">Prof. Yoonsoo Lee</h4>
                                 <p class="experience-affiliation">Economics · Sogang University</p>
                                 <p class="experience-note">Macroeconomics I, Topics on Business Cycle</p>
+                            </div>
+                        </li>
+
+                        <li class="experience-item">
+                            <p class="experience-period">2024</p>
+
+                            <div class="experience-details">
+                                <h4 class="experience-entry-title">Prof. Kyung Hee Seo</h4>
+                                <p class="experience-affiliation">Institute for Convergence Education · Sogang University</p>
+                                <p class="experience-note">Introduction to the Big Data Programming</p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="experience-group experience-group--plain-list" aria-labelledby="other-experience-title">
+                    <h3 id="other-experience-title" class="experience-group-title">Other Experience</h3>
+
+                    <ul class="experience-list">
+                        <li class="experience-item">
+                            <p class="experience-period">2025</p>
+
+                            <div class="experience-details">
+                                <h4 class="experience-entry-title">Tutor</h4>
+                                <p class="experience-affiliation">Economics Study Center · Sogang University</p>
+                                <p class="experience-note">Macroeconomics I, Topics on Business Cycle, Stock and Bond Markets</p>
                             </div>
                         </li>
                     </ul>
