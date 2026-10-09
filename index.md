@@ -167,7 +167,7 @@ permalink: /
 
                 <div class="paper-card-content liquid-glass__content">
                     <div class="paper-header">
-                        <h4 class="paper-title">Data Economy of Factor Zoo</h4>
+                        <h4 class="paper-title">The Data Economy of the Factor Zoo</h4>
                         <p class="paper-authors">
                             Sole author
                         </p>
