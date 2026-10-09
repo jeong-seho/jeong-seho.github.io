@@ -66,7 +66,10 @@ permalink: /
     </div>
 
     <div class="research-content">
-        <h3 class="research-group-title">Working Papers</h3>
+        <div class="research-group-heading">
+            <h3 class="research-group-title">Working Papers</h3>
+            <p class="research-group-note"><em>* indicates presentation by coauthors.</em></p>
+        </div>
 
         <div class="paper-list">
             <article class="paper-card liquid-glass">
@@ -86,7 +89,7 @@ permalink: /
                     <!-- Replace with actual conference/seminar names and years; remove if not applicable. -->
                     <dl class="paper-presentations">
                         <dt>Presented at</dt>
-                        <dd>2026 KER International Conference, Sogang Global Symposium on the Frontiers of Economics, 2026 KIEA Summer Conference</dd>
+                        <dd>2026 KER International Conference, Sogang Global Symposium on the Frontiers of Economics, 2026 KIEA Summer Conference*</dd>
                     </dl>
 
                     <div class="paper-actions" role="group" aria-label="Project resources">
