@@ -43,9 +43,9 @@ permalink: /
         <section class="home-block">
             <h2 class="block-title">Research Interests</h2>
             <ul class="interest-list" role="list">
+                <li>Macro-Finance</li>
                 <li>Asset Pricing</li>
                 <li>Financial Institutions</li>
-                <li>Macroeconomics</li>
             </ul>
         </section>
 
