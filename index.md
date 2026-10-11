@@ -6,22 +6,19 @@ permalink: /
 
 <!-- HOME SECTION -->
 
-<section id="home" class="home-hero page-section">
+<section id="home" class="home-hero page-section" aria-labelledby="home-name">
     <header class="home-identity">
-        <h1 class="home-name">Seho Jeong</h1>
+        <h1 id="home-name" class="home-name">Seho Jeong</h1>
 
         <p class="home-position">Master's Student in Economics</p>
         <p class="home-affiliation">Sogang University</p>
     </header>
 
-    <aside class="home-photo-wrap">
-        <div class="home-photo-frame liquid-glass">
-            <span class="liquid-glass__refract liquid-glass__refract--profile" aria-hidden="true"></span>
-            <span class="liquid-glass__tint" aria-hidden="true"></span>
-            <span class="liquid-glass__specular" aria-hidden="true"></span>
-            <img src="/assets/img/profile.jpeg" alt="Seho Jeong" class="home-photo liquid-glass__content">
+    <div class="home-photo-wrap">
+        <div class="home-photo-frame">
+            <img src="{{ '/assets/img/profile.jpeg' | relative_url }}" alt="Portrait of Seho Jeong" class="home-photo" width="160" height="160" decoding="async">
         </div>
-    </aside>
+    </div>
 
     <div class="home-main">
         <div class="home-intro">
@@ -72,17 +69,14 @@ permalink: /
         </div>
 
         <div class="paper-list">
-            <article class="paper-card liquid-glass">
-                <span class="liquid-glass__refract liquid-glass__refract--card" aria-hidden="true"></span>
-                <span class="liquid-glass__tint" aria-hidden="true"></span>
-                <span class="liquid-glass__specular" aria-hidden="true"></span>
+            <article class="paper-item">
 
-                <div class="paper-card-content liquid-glass__content">
+                <div class="paper-content">
                     <div class="paper-header">
                         <h4 class="paper-title">Growing into Bond Markets</h4>
                         <p class="paper-authors">
                             with 
-                            <a href="https://sites.google.com/view/yoonsoolee/" target="_blank" rel="noopener noreferrer">Yoonsoo Lee</a>
+                            <a href="https://sites.google.com/view/yoonsoolee/" target="_blank" rel="noopener noreferrer" aria-label="Yoonsoo Lee (opens in a new tab)">Yoonsoo Lee</a>
                         </p>
                     </div>
 
@@ -93,7 +87,7 @@ permalink: /
                     </dl>
 
                     <div class="paper-actions" role="group" aria-label="Project resources">
-                        <button class="resource-link abstract-button" type="button" aria-expanded="false" aria-controls="abstract-paper-1">
+                        <button class="resource-link abstract-button" type="button" aria-expanded="true" aria-controls="abstract-paper-1" aria-label="Abstract for Growing into Bond Markets" hidden>
                             <span class="abstract-toggle" aria-hidden="true"></span>
                             <span>Abstract</span>
                         </button>
@@ -105,6 +99,7 @@ permalink: /
                                 <path d="M5.5 7a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5"/>
                             </svg>
                             <span>Draft</span>
+                            <span class="resource-status">(forthcoming)</span>
                         </button>
 
                         <!-- <a class="resource-link" href="#" download>
@@ -116,7 +111,7 @@ permalink: /
                         </a> -->
                     </div>
 
-                    <div class="abstract-body" id="abstract-paper-1" hidden>
+                    <div class="abstract-body" id="abstract-paper-1" role="region" aria-label="Abstract for Growing into Bond Markets">
                         <p>
                             We study empirically and theoretically how firms grow into bond markets and how this process shapes aggregate corporate debt structure. Using Korean firm-level data, we document that bond market participation rises sharply over the firm life cycle, while the bond share of debt among issuers varies little with age. We then decompose aggregate bond share into bond market participation, issuers' relative debt scale, and the bond share of issuer's debt. We show that rising participation is offset by a substantial decline in issuers' relative debt scale. To interpret this joint dynamics, we develop a heterogeneous firm model in which firms choose investment and debt structure. Improvements in bank financing disproportionately expand non-issuers, reducing issuers' relative debt scale, while the resulting firm growth raises subsequent entry into bond markets. Thus bank loans and bonds can be static substitutes but dynamic complements through firm growth.
                         </p>
@@ -128,47 +123,38 @@ permalink: /
         <h3 class="research-group-title">Work in Progress</h3>
 
         <div class="paper-list">
-            <article class="paper-card liquid-glass">
-                <span class="liquid-glass__refract liquid-glass__refract--card" aria-hidden="true"></span>
-                <span class="liquid-glass__tint" aria-hidden="true"></span>
-                <span class="liquid-glass__specular" aria-hidden="true"></span>
+            <article class="paper-item">
 
-                <div class="paper-card-content liquid-glass__content">
+                <div class="paper-content">
                     <div class="paper-header">
                         <h4 class="paper-title">Crowded Out, Crowding Out: State-Owned Enterprise Debt and the Reallocation of Bank Credit</h4>
                         <p class="paper-authors">
                             with 
-                            <a href="https://taewoongjo72.github.io/" target="_blank" rel="noopener noreferrer">Taewoong Jo</a>,
-                            <a href="https://sites.google.com/view/junheekwak/" target="_blank" rel="noopener noreferrer">Jun Hee Kwak</a>,
+                            <a href="https://taewoongjo72.github.io/" target="_blank" rel="noopener noreferrer" aria-label="Taewoong Jo (opens in a new tab)">Taewoong Jo</a>,
+                            <a href="https://sites.google.com/view/junheekwak/" target="_blank" rel="noopener noreferrer" aria-label="Jun Hee Kwak (opens in a new tab)">Jun Hee Kwak</a>,
                             and
-                            <a href="https://sites.google.com/view/yoonsoolee/" target="_blank" rel="noopener noreferrer">Yoonsoo Lee</a>
+                            <a href="https://sites.google.com/view/yoonsoolee/" target="_blank" rel="noopener noreferrer" aria-label="Yoonsoo Lee (opens in a new tab)">Yoonsoo Lee</a>
                         </p>
                     </div>
                 </div>
             </article>
 
-            <article class="paper-card liquid-glass">
-                <span class="liquid-glass__refract liquid-glass__refract--card" aria-hidden="true"></span>
-                <span class="liquid-glass__tint" aria-hidden="true"></span>
-                <span class="liquid-glass__specular" aria-hidden="true"></span>
+            <article class="paper-item">
 
-                <div class="paper-card-content liquid-glass__content">
+                <div class="paper-content">
                     <div class="paper-header">
                         <h4 class="paper-title">Single-Stock Leveraged ETFs</h4>
                         <p class="paper-authors">
                             with 
-                            <a href="https://sites.google.com/view/yoonsoolee/" target="_blank" rel="noopener noreferrer">Yoonsoo Lee</a>
+                            <a href="https://sites.google.com/view/yoonsoolee/" target="_blank" rel="noopener noreferrer" aria-label="Yoonsoo Lee (opens in a new tab)">Yoonsoo Lee</a>
                         </p>
                     </div>
                 </div>
             </article>
 
-            <article class="paper-card liquid-glass">
-                <span class="liquid-glass__refract liquid-glass__refract--card" aria-hidden="true"></span>
-                <span class="liquid-glass__tint" aria-hidden="true"></span>
-                <span class="liquid-glass__specular" aria-hidden="true"></span>
+            <article class="paper-item">
 
-                <div class="paper-card-content liquid-glass__content">
+                <div class="paper-content">
                     <div class="paper-header">
                         <h4 class="paper-title">The Data Economy of the Factor Zoo</h4>
                         <p class="paper-authors">
@@ -190,12 +176,9 @@ permalink: /
     </div>
 
     <div class="experience-content">
-        <div class="experience-sheet liquid-glass">
-            <span class="liquid-glass__refract liquid-glass__refract--card" aria-hidden="true"></span>
-            <span class="liquid-glass__tint" aria-hidden="true"></span>
-            <span class="liquid-glass__specular" aria-hidden="true"></span>
+        <div class="experience-groups">
 
-            <div class="experience-sheet-content liquid-glass__content">
+            <div class="experience-listing">
                 <section class="experience-group experience-group--plain-list" aria-labelledby="research-assistant-title">
                     <h3 id="research-assistant-title" class="experience-group-title">Research Assistant</h3>
 

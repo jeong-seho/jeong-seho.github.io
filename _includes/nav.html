@@ -1,15 +1,14 @@
-<header class="site-header liquid-glass">
-    <span class="liquid-glass__refract liquid-glass__refract--nav" aria-hidden="true"></span>
-    <span class="liquid-glass__tint" aria-hidden="true"></span>
-    <span class="liquid-glass__specular" aria-hidden="true"></span>
+<header class="site-header">
+    <div class="nav-wrap">
+        <a class="site-brand" href="#home" aria-label="Seho Jeong — Home">{{ site.title }}</a>
 
-    <div class="nav-wrap liquid-glass__content">
         <nav class="nav" aria-label="Primary navigation">
             {% for item in site.nav %}
                 <a href="{{ item.url }}">
                     {{ item.title }}
                 </a>
             {% endfor %}
+            <a class="nav-cv" href="{{ '/assets/cv/cv.pdf' | relative_url }}" aria-label="Curriculum vitae (PDF)">CV</a>
         </nav>
     </div>
 </header>
