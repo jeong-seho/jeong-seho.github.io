@@ -8,6 +8,12 @@ permalink: /
 
 <section id="home" class="home-hero page-section" aria-labelledby="home-name">
     <div class="home-heading">
+        <div class="home-photo-wrap">
+            <div class="home-photo-frame">
+                <img src="{{ '/assets/img/profile.jpeg' | relative_url }}" alt="Portrait of Seho Jeong" class="home-photo" width="128" height="128" decoding="async">
+            </div>
+        </div>
+
         <header class="home-identity">
             <h1 id="home-name" class="home-name">Seho Jeong</h1>
 
@@ -15,11 +21,6 @@ permalink: /
             <p class="home-affiliation">Sogang University</p>
         </header>
 
-        <div class="home-photo-wrap">
-            <div class="home-photo-frame">
-                <img src="{{ '/assets/img/profile.jpeg' | relative_url }}" alt="Portrait of Seho Jeong" class="home-photo" width="136" height="136" decoding="async">
-            </div>
-        </div>
     </div>
 
     <div class="home-main">
