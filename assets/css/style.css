@@ -26,7 +26,7 @@
     --column-gap: 64px;
     --section-gap: 76px;
     --header-height: 68px;
-    --photo-size: 160px;
+    --photo-size: 136px;
 
     --font-display: "Newsreader", Georgia, "Times New Roman", serif;
     --font-sans: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
@@ -217,14 +217,14 @@ img {
 
 .home-hero {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) var(--photo-size);
-    grid-template-areas:
-        "identity portrait"
-        "main portrait"
-        "details details";
-    gap: 24px var(--column-gap);
-    align-items: start;
+    gap: 28px;
     padding-top: 48px;
+}
+
+.home-heading {
+    display: flex;
+    align-items: center;
+    gap: 48px;
 }
 
 .home-identity,
@@ -233,12 +233,8 @@ img {
     min-width: 0;
 }
 
-.home-identity {
-    grid-area: identity;
-}
-
 .home-main {
-    grid-area: main;
+    max-width: 800px;
 }
 
 .home-name {
@@ -318,9 +314,8 @@ img {
 }
 
 .home-photo-wrap {
-    grid-area: portrait;
     display: flex;
-    justify-content: flex-end;
+    flex: none;
 }
 
 .home-photo-frame {
@@ -343,9 +338,8 @@ img {
 /* Background information shares the same column alignment as research */
 
 .home-details {
-    grid-area: details;
     display: grid;
-    gap: 16px;
+    gap: 24px;
     padding-top: 24px;
     border-top: 1px solid var(--border-color);
 }
@@ -354,7 +348,7 @@ img {
     display: grid;
     grid-template-columns: var(--section-rail) minmax(0, 1fr);
     gap: var(--column-gap);
-    align-items: baseline;
+    align-items: start;
 }
 
 .block-title {
@@ -365,15 +359,27 @@ img {
     line-height: 1.5;
 }
 
-.interest-list {
-    margin: 0;
-    font-size: 16px;
-    line-height: 1.65;
+.home-block:has(.interest-list) .block-title {
+    padding-top: 6px;
 }
 
-.interest-list span {
-    margin: 0 8px;
-    color: var(--text-muted);
+.interest-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.interest-list li {
+    padding: 6px 12px;
+    border-radius: 4px;
+    background: #F3F7FA;
+    color: var(--color-primary);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.6;
 }
 
 .education-list {
@@ -449,6 +455,15 @@ img {
     margin-bottom: 24px;
 }
 
+.research-group + .research-group {
+    margin-top: 56px;
+}
+
+.research-group--progress > .research-group-title {
+    margin-bottom: 22px;
+    color: var(--text-muted);
+}
+
 .research-group-note {
     margin: 6px 0 0;
     color: var(--text-muted);
@@ -459,27 +474,14 @@ img {
 
 .paper-list {
     display: grid;
-}
-
-.paper-list + .research-group-title {
-    margin: 44px 0 24px;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .paper-item {
     min-width: 0;
-    padding: 28px 0;
-}
-
-.paper-item:first-child {
-    padding-top: 0;
-}
-
-.paper-item:last-child {
-    padding-bottom: 0;
-}
-
-.paper-item + .paper-item {
-    border-top: 1px solid var(--border-color);
 }
 
 .paper-content {
@@ -501,6 +503,40 @@ img {
     color: var(--text-muted);
     font-size: 16px;
     line-height: 1.6;
+}
+
+/* Preliminary projects form a quieter, title-and-coauthor list. */
+
+.paper-list--compact {
+    gap: 26px;
+}
+
+.paper-list--compact .paper-item {
+    position: relative;
+    padding-left: 18px;
+}
+
+.paper-list--compact .paper-item::before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 0;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--color-primary);
+}
+
+.paper-list--compact .paper-title {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+}
+
+.paper-list--compact .paper-authors {
+    margin-top: 5px;
+    font-size: 15px;
 }
 
 .paper-presentations {
@@ -706,11 +742,6 @@ img {
         --section-gap: 60px;
     }
 
-    .home-hero {
-        grid-template-columns: 1fr;
-        grid-template-areas: "identity" "main" "details";
-    }
-
     .home-photo-wrap {
         display: none;
     }
@@ -784,6 +815,10 @@ img {
         gap: 8px;
     }
 
+    .home-block:has(.interest-list) .block-title {
+        padding-top: 0;
+    }
+
     .section-title {
         font-size: 30px;
     }
@@ -798,8 +833,8 @@ img {
         line-height: 1.45;
     }
 
-    .paper-list + .research-group-title {
-        margin-top: 40px;
+    .research-group + .research-group {
+        margin-top: 44px;
     }
 
     .experience-item {

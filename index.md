@@ -7,16 +7,18 @@ permalink: /
 <!-- HOME SECTION -->
 
 <section id="home" class="home-hero page-section" aria-labelledby="home-name">
-    <header class="home-identity">
-        <h1 id="home-name" class="home-name">Seho Jeong</h1>
+    <div class="home-heading">
+        <header class="home-identity">
+            <h1 id="home-name" class="home-name">Seho Jeong</h1>
 
-        <p class="home-position">Master's Student in Economics</p>
-        <p class="home-affiliation">Sogang University</p>
-    </header>
+            <p class="home-position">Master's Student in Economics</p>
+            <p class="home-affiliation">Sogang University</p>
+        </header>
 
-    <div class="home-photo-wrap">
-        <div class="home-photo-frame">
-            <img src="{{ '/assets/img/profile.jpeg' | relative_url }}" alt="Portrait of Seho Jeong" class="home-photo" width="160" height="160" decoding="async">
+        <div class="home-photo-wrap">
+            <div class="home-photo-frame">
+                <img src="{{ '/assets/img/profile.jpeg' | relative_url }}" alt="Portrait of Seho Jeong" class="home-photo" width="136" height="136" decoding="async">
+            </div>
         </div>
     </div>
 
@@ -40,7 +42,11 @@ permalink: /
     <div class="home-details">
         <section class="home-block">
             <h2 class="block-title">Research Interests</h2>
-            <p class="interest-list">Asset Pricing <span aria-hidden="true">·</span> Financial Institutions <span aria-hidden="true">·</span> Macroeconomics</p>
+            <ul class="interest-list" role="list">
+                <li>Asset Pricing</li>
+                <li>Financial Institutions</li>
+                <li>Macroeconomics</li>
+            </ul>
         </section>
 
         <section class="home-block">
@@ -63,8 +69,9 @@ permalink: /
     </div>
 
     <div class="research-content">
+        <section class="research-group research-group--working" aria-labelledby="working-papers-title">
         <div class="research-group-heading">
-            <h3 class="research-group-title">Working Papers</h3>
+            <h3 id="working-papers-title" class="research-group-title">Working Papers</h3>
             <p class="research-group-note"><em>* indicates presentation by coauthors.</em></p>
         </div>
 
@@ -119,51 +126,37 @@ permalink: /
                 </div>
             </article>
         </div>
+        </section>
 
-        <h3 class="research-group-title">Work in Progress</h3>
+        <section class="research-group research-group--progress" aria-labelledby="work-in-progress-title">
+            <h3 id="work-in-progress-title" class="research-group-title">Work in Progress</h3>
 
-        <div class="paper-list">
-            <article class="paper-item">
+            <ul class="paper-list paper-list--compact" role="list">
+                <li class="paper-item">
+                    <h4 class="paper-title">Crowded Out, Crowding Out: State-Owned Enterprise Debt and the Reallocation of Bank Credit</h4>
+                    <p class="paper-authors">
+                        with
+                        <a href="https://taewoongjo72.github.io/" target="_blank" rel="noopener noreferrer" aria-label="Taewoong Jo (opens in a new tab)">Taewoong Jo</a>,
+                        <a href="https://sites.google.com/view/junheekwak/" target="_blank" rel="noopener noreferrer" aria-label="Jun Hee Kwak (opens in a new tab)">Jun Hee Kwak</a>,
+                        and
+                        <a href="https://sites.google.com/view/yoonsoolee/" target="_blank" rel="noopener noreferrer" aria-label="Yoonsoo Lee (opens in a new tab)">Yoonsoo Lee</a>
+                    </p>
+                </li>
 
-                <div class="paper-content">
-                    <div class="paper-header">
-                        <h4 class="paper-title">Crowded Out, Crowding Out: State-Owned Enterprise Debt and the Reallocation of Bank Credit</h4>
-                        <p class="paper-authors">
-                            with 
-                            <a href="https://taewoongjo72.github.io/" target="_blank" rel="noopener noreferrer" aria-label="Taewoong Jo (opens in a new tab)">Taewoong Jo</a>,
-                            <a href="https://sites.google.com/view/junheekwak/" target="_blank" rel="noopener noreferrer" aria-label="Jun Hee Kwak (opens in a new tab)">Jun Hee Kwak</a>,
-                            and
-                            <a href="https://sites.google.com/view/yoonsoolee/" target="_blank" rel="noopener noreferrer" aria-label="Yoonsoo Lee (opens in a new tab)">Yoonsoo Lee</a>
-                        </p>
-                    </div>
-                </div>
-            </article>
+                <li class="paper-item">
+                    <h4 class="paper-title">Single-Stock Leveraged ETFs</h4>
+                    <p class="paper-authors">
+                        with
+                        <a href="https://sites.google.com/view/yoonsoolee/" target="_blank" rel="noopener noreferrer" aria-label="Yoonsoo Lee (opens in a new tab)">Yoonsoo Lee</a>
+                    </p>
+                </li>
 
-            <article class="paper-item">
-
-                <div class="paper-content">
-                    <div class="paper-header">
-                        <h4 class="paper-title">Single-Stock Leveraged ETFs</h4>
-                        <p class="paper-authors">
-                            with 
-                            <a href="https://sites.google.com/view/yoonsoolee/" target="_blank" rel="noopener noreferrer" aria-label="Yoonsoo Lee (opens in a new tab)">Yoonsoo Lee</a>
-                        </p>
-                    </div>
-                </div>
-            </article>
-
-            <article class="paper-item">
-
-                <div class="paper-content">
-                    <div class="paper-header">
-                        <h4 class="paper-title">The Data Economy of the Factor Zoo</h4>
-                        <p class="paper-authors">
-                            Sole author
-                        </p>
-                    </div>
-                </div>
-            </article>
-        </div>
+                <li class="paper-item">
+                    <h4 class="paper-title">The Data Economy of the Factor Zoo</h4>
+                    <p class="paper-authors">Sole author</p>
+                </li>
+            </ul>
+        </section>
     </div>
 </section>
 
