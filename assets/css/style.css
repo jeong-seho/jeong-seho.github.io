@@ -511,22 +511,6 @@ img {
     gap: 26px;
 }
 
-.paper-list--compact .paper-item {
-    position: relative;
-    padding-left: 18px;
-}
-
-.paper-list--compact .paper-item::before {
-    content: "";
-    position: absolute;
-    top: 11px;
-    left: 0;
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background: var(--color-primary);
-}
-
 .paper-list--compact .paper-title {
     font-size: 18px;
     font-weight: 500;
