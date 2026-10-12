@@ -26,7 +26,7 @@
     --column-gap: 64px;
     --section-gap: 76px;
     --header-height: 68px;
-    --photo-width: 128px;
+    --photo-width: 160px;
 
     --font-display: "Newsreader", Georgia, "Times New Roman", serif;
     --font-sans: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
@@ -213,19 +213,22 @@ img {
     border-top: 1px solid var(--border-color);
 }
 
-/* Compact identity, understated portrait */
+/* Profile text and portrait occupy separate desktop columns. */
 
 .home-hero {
     display: grid;
-    gap: 28px;
+    grid-template-columns: var(--section-rail) minmax(0, 1fr);
+    grid-template-areas:
+        "portrait identity"
+        "portrait main"
+        "details details";
+    align-items: start;
+    gap: 28px var(--column-gap);
     padding-top: 48px;
 }
 
-.home-heading {
-    display: grid;
-    grid-template-columns: var(--photo-width) minmax(0, 1fr);
-    align-items: stretch;
-    gap: 28px;
+.home-identity {
+    grid-area: identity;
 }
 
 .home-identity,
@@ -235,6 +238,7 @@ img {
 }
 
 .home-main {
+    grid-area: main;
     max-width: 800px;
 }
 
@@ -306,7 +310,7 @@ img {
 .home-link {
     display: inline-flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     min-width: 44px;
     min-height: 44px;
     font-size: 15px;
@@ -315,14 +319,15 @@ img {
 }
 
 .home-photo-wrap {
-    position: relative;
-    min-height: 0;
+    grid-area: portrait;
+    align-self: start;
 }
 
-/* Only the identity sets the row height, keeping both portrait edges aligned. */
 .home-photo-frame {
-    position: absolute;
-    inset: 0;
+    width: var(--photo-width);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    outline: 1px solid var(--border-color);
     overflow: hidden;
 }
 
@@ -331,11 +336,14 @@ img {
     height: 100%;
     object-fit: cover;
     object-position: center top;
+    transform: scale(1.25);
+    transform-origin: 50% 2.5%;
 }
 
 /* Background information shares the same column alignment as research */
 
 .home-details {
+    grid-area: details;
     display: grid;
     gap: 24px;
     padding-top: 24px;
@@ -724,8 +732,9 @@ img {
         --section-gap: 60px;
     }
 
-    .home-heading {
+    .home-hero {
         grid-template-columns: minmax(0, 1fr);
+        grid-template-areas: "identity" "main" "details";
     }
 
     .home-photo-wrap {
