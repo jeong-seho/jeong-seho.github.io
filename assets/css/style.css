@@ -19,8 +19,10 @@
     --color-primary-hover: #144B68;
     --border-color: #DCE5EC;
     --link-underline: #6F92A5;
-    --link-wave: linear-gradient(90deg, #102B63 0%, #215BD8 25%, #087EA4 50%, #215BD8 75%, #102B63 100%);
-    --interest-wave: linear-gradient(90deg, #EDF4FB 0%, #D5E5FA 25%, #E1F2F8 50%, #D5E5FA 75%, #EDF4FB 100%);
+    --link-wave: linear-gradient(125deg, #102B63 0%, #215BD8 25%, #087EA4 50%, #215BD8 75%, #102B63 100%);
+    --interest-wave: linear-gradient(135deg, #EDF4FB 0%, #D5E5FA 25%, #E1F2F8 50%, #D5E5FA 75%, #EDF4FB 100%);
+    --wave-duration: 4.8s;
+    --wave-easing: cubic-bezier(0.45, 0, 0.55, 1);
     --paper-text-size: 16px;
     --motion-easing: cubic-bezier(0.2, 0, 0.38, 0.9);
 
@@ -704,7 +706,7 @@ img {
     text-wrap: pretty;
 }
 
-/* Text and underline share a wave; tags use a quieter decorative background. */
+/* Bounded, eased color drift; the underline follows without moving its baseline. */
 
 .home-link-label,
 .paper-authors a,
@@ -717,13 +719,15 @@ img {
 .home-link-label,
 .paper-authors a,
 .resource-label {
-    --wave-start: 0% 50%, 0% 100%;
-    --wave-end: 200% 50%, 200% 100%;
+    --wave-rest: 18% 30%, 18% 100%;
+    --wave-bloom: 76% 72%, 76% 100%;
+    --wave-drift: 44% 18%, 44% 100%;
 }
 
 @keyframes link-wave {
-    from { background-position: var(--wave-start, 0% 50%); }
-    to { background-position: var(--wave-end, 200% 50%); }
+    0%, 100% { background-position: var(--wave-rest, 18% 30%); }
+    42% { background-position: var(--wave-bloom, 76% 72%); }
+    78% { background-position: var(--wave-drift, 44% 18%); }
 }
 
 @supports ((background-clip: text) or (-webkit-background-clip: text)) {
@@ -733,9 +737,9 @@ img {
     .resource-link:not(:disabled):focus-visible .resource-label {
         background-color: transparent;
         background-image: var(--link-wave), var(--wave-underline, linear-gradient(transparent, transparent));
-        background-size: 200% 100%, 200% 1px;
-        background-position: var(--wave-start);
-        background-repeat: repeat-x;
+        background-size: 180% 180%, 180% 1px;
+        background-position: var(--wave-rest);
+        background-repeat: no-repeat;
         background-clip: text, padding-box;
         -webkit-background-clip: text, padding-box;
         -webkit-text-fill-color: transparent;
@@ -749,35 +753,40 @@ img {
         .resource-link:not(:disabled):hover .resource-label {
             background-color: transparent;
             background-image: var(--link-wave), var(--wave-underline, linear-gradient(transparent, transparent));
-            background-size: 200% 100%, 200% 1px;
-            background-position: var(--wave-start);
-            background-repeat: repeat-x;
+            background-size: 180% 180%, 180% 1px;
+            background-position: var(--wave-rest);
+            background-repeat: no-repeat;
             background-clip: text, padding-box;
             -webkit-background-clip: text, padding-box;
             -webkit-text-fill-color: transparent;
             text-decoration-color: transparent;
-            animation: link-wave 2s linear infinite;
+            animation: link-wave var(--wave-duration) var(--wave-easing) infinite;
         }
     }
 }
 
 .nav:has(a[aria-current="location"]:focus-visible) .nav-indicator {
     background-image: var(--link-wave);
-    background-size: 200% 100%;
+    background-size: 180% 180%;
+    background-position: 18% 30%;
+    background-repeat: no-repeat;
 }
 
 @media (hover: hover) and (pointer: fine) {
     .nav:has(a[aria-current="location"]:hover) .nav-indicator {
         background-image: var(--link-wave);
-        background-size: 200% 100%;
-        animation: link-wave 2s linear infinite;
+        background-size: 180% 180%;
+        background-position: 18% 30%;
+        background-repeat: no-repeat;
+        animation: link-wave var(--wave-duration) var(--wave-easing) infinite;
     }
 
     .interest-list li:hover {
         background-image: var(--interest-wave);
-        background-size: 200% 100%;
-        background-repeat: repeat-x;
-        animation: link-wave 2s linear infinite;
+        background-size: 180% 180%;
+        background-position: 18% 30%;
+        background-repeat: no-repeat;
+        animation: link-wave var(--wave-duration) var(--wave-easing) infinite;
     }
 }
 
