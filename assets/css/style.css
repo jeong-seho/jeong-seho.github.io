@@ -19,7 +19,7 @@
     --color-primary-hover: #144B68;
     --border-color: #DCE5EC;
     --link-underline: #6F92A5;
-    --link-wave: linear-gradient(110deg, #144B68 0%, #245DA3 25%, #176B91 50%, #245DA3 75%, #144B68 100%);
+    --link-wave: linear-gradient(90deg, #102B63 0%, #215BD8 25%, #087EA4 50%, #215BD8 75%, #102B63 100%);
     --paper-text-size: 16px;
     --motion-easing: cubic-bezier(0.2, 0, 0.38, 0.9);
 
@@ -85,18 +85,6 @@ a:focus-visible {
 
 button {
     font: inherit;
-}
-
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip-path: inset(50%);
-    white-space: nowrap;
-    border: 0;
 }
 
 img {
@@ -520,6 +508,10 @@ img {
     list-style: none;
 }
 
+.research-group--working .paper-list {
+    gap: 48px;
+}
+
 .paper-item {
     min-width: 0;
 }
@@ -530,10 +522,10 @@ img {
 
 .paper-title {
     margin: 0;
-    font-size: 22px;
-    font-weight: 600;
-    line-height: 1.42;
-    letter-spacing: -0.015em;
+    font-size: 19px;
+    font-weight: 550;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
     overflow-wrap: break-word;
     text-wrap: pretty;
 }
@@ -559,30 +551,8 @@ img {
 }
 
 .paper-list--compact .paper-authors {
-    margin: 0;
-    font-size: 15px;
-}
-
-.paper-meta {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0 20px;
     margin-top: 5px;
-}
-
-.paper-permalink {
-    min-width: 0;
-}
-
-.paper-permalink:has(.copy-fallback:not([hidden])) {
-    flex-basis: 100%;
-}
-
-.paper-permalink .paper-copy-link {
-    color: var(--text-muted);
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .paper-presentations {
@@ -716,67 +686,11 @@ img {
     text-wrap: pretty;
 }
 
-.paper-copy-link .resource-label {
-    display: inline-block;
-    width: 5.7em;
-    text-align: left;
-}
-
-.copy-fallback {
-    flex-basis: 100%;
-    width: 100%;
-    max-width: 440px;
-    margin-top: 8px;
-    color: var(--text-muted);
-    font-size: 14px;
-    overflow-wrap: anywhere;
-}
-
-.copy-fallback label {
-    display: block;
-    margin-bottom: 6px;
-}
-
-.copy-fallback input {
-    width: 100%;
-    min-width: 0;
-    min-height: 44px;
-    padding: 8px 10px;
-    border: 1px solid var(--border-color);
-    border-radius: 3px;
-    background: var(--page-bg);
-    color: var(--text-main);
-    font: inherit;
-}
-
-.copy-fallback input:focus-visible {
-    outline: 2px solid var(--color-primary);
-    outline-offset: 2px;
-}
-
-.copy-fallback-hint {
-    display: block;
-    margin-top: 6px;
-}
-
-.copy-fallback-close {
-    min-width: 44px;
-    min-height: 44px;
-    padding: 8px 4px;
-    border: 0;
-    background: transparent;
-    color: var(--color-primary);
-    cursor: pointer;
-    font: inherit;
-    text-decoration: underline;
-    text-underline-offset: 4px;
-}
-
 /* Color moves through the letters, never the reading layout or icon geometry. */
 
 @keyframes link-wave {
     from { background-position: 0% 50%; }
-    to { background-position: 100% 50%; }
+    to { background-position: 200% 50%; }
 }
 
 @supports ((background-clip: text) or (-webkit-background-clip: text)) {
@@ -784,7 +698,7 @@ img {
     .resource-link:not(:disabled):focus-visible .resource-label {
         background-color: var(--color-primary-hover);
         background-image: var(--link-wave);
-        background-size: 240% 100%;
+        background-size: 200% 100%;
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -796,12 +710,12 @@ img {
         .resource-link:not(:disabled):hover .resource-label {
             background-color: var(--color-primary-hover);
             background-image: var(--link-wave);
-            background-size: 240% 100%;
+            background-size: 200% 100%;
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             text-decoration-color: var(--color-primary-hover);
-            animation: link-wave 2.8s ease-in-out infinite alternate;
+            animation: link-wave 2s linear infinite;
         }
     }
 }
@@ -1004,16 +918,6 @@ img {
         font-size: 17px;
     }
 
-    .paper-title {
-        font-size: 20px;
-        line-height: 1.45;
-    }
-
-    .paper-meta {
-        justify-content: flex-start;
-        column-gap: 16px;
-    }
-
     .research-group + .research-group {
         margin-top: 44px;
     }
@@ -1053,8 +957,7 @@ img {
 @media print {
     .site-header,
     .skip-link,
-    .paper-actions,
-    .paper-permalink {
+    .paper-actions {
         display: none;
     }
 

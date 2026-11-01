@@ -107,13 +107,6 @@ permalink: /
                             <span class="resource-status">(forthcoming)</span>
                         </button>
 
-                        <button class="resource-link paper-copy-link" type="button" data-copy-target="growing-into-bond-markets" aria-label="Copy link to Growing into Bond Markets" hidden>
-                            <svg class="resource-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
-                                <path d="M6.2 5.8 4.8 7.2a2.8 2.8 0 0 0 4 4l1.4-1.4M5.8 6.2l1.4-1.4a2.8 2.8 0 0 1 4 4l-1.4 1.4M5.6 10.4l4.8-4.8" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
-                            </svg>
-                            <span class="resource-label">Copy link</span>
-                        </button>
-
                         <!-- <a class="resource-link" href="#" download>
                             <svg class="resource-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
                                 <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 0 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z"/>
@@ -139,56 +132,26 @@ permalink: /
             <ul class="paper-list paper-list--compact" role="list">
                 <li class="paper-item" id="crowded-out-crowding-out">
                     <h4 class="paper-title">Crowded Out, Crowding Out: State-Owned Enterprise Debt and the Reallocation of Bank Credit</h4>
-                    <div class="paper-meta">
-                        <p class="paper-authors">
-                            with
-                            <a href="https://taewoongjo72.github.io/" target="_blank" rel="noopener noreferrer" aria-label="Taewoong Jo (opens in a new tab)">Taewoong Jo</a>,
-                            <a href="https://sites.google.com/view/junheekwak/" target="_blank" rel="noopener noreferrer" aria-label="Jun Hee Kwak (opens in a new tab)">Jun Hee Kwak</a>,
-                            and
-                            <a href="https://sites.google.com/view/yoonsoolee/" target="_blank" rel="noopener noreferrer" aria-label="Yoonsoo Lee (opens in a new tab)">Yoonsoo Lee</a>
-                        </p>
-                        <div class="paper-permalink">
-                            <button class="resource-link paper-copy-link" type="button" data-copy-target="crowded-out-crowding-out" aria-label="Copy link to Crowded Out, Crowding Out" hidden>
-                                <svg class="resource-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
-                                    <path d="M6.2 5.8 4.8 7.2a2.8 2.8 0 0 0 4 4l1.4-1.4M5.8 6.2l1.4-1.4a2.8 2.8 0 0 1 4 4l-1.4 1.4M5.6 10.4l4.8-4.8" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
-                                </svg>
-                                <span class="resource-label">Copy link</span>
-                            </button>
-                        </div>
-                    </div>
+                    <p class="paper-authors">
+                        with
+                        <a href="https://taewoongjo72.github.io/" target="_blank" rel="noopener noreferrer" aria-label="Taewoong Jo (opens in a new tab)">Taewoong Jo</a>,
+                        <a href="https://sites.google.com/view/junheekwak/" target="_blank" rel="noopener noreferrer" aria-label="Jun Hee Kwak (opens in a new tab)">Jun Hee Kwak</a>,
+                        and
+                        <a href="https://sites.google.com/view/yoonsoolee/" target="_blank" rel="noopener noreferrer" aria-label="Yoonsoo Lee (opens in a new tab)">Yoonsoo Lee</a>
+                    </p>
                 </li>
 
                 <li class="paper-item" id="single-stock-leveraged-etfs">
                     <h4 class="paper-title">Single-Stock Leveraged ETFs</h4>
-                    <div class="paper-meta">
-                        <p class="paper-authors">
-                            with
-                            <a href="https://sites.google.com/view/yoonsoolee/" target="_blank" rel="noopener noreferrer" aria-label="Yoonsoo Lee (opens in a new tab)">Yoonsoo Lee</a>
-                        </p>
-                        <div class="paper-permalink">
-                            <button class="resource-link paper-copy-link" type="button" data-copy-target="single-stock-leveraged-etfs" aria-label="Copy link to Single-Stock Leveraged ETFs" hidden>
-                                <svg class="resource-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
-                                    <path d="M6.2 5.8 4.8 7.2a2.8 2.8 0 0 0 4 4l1.4-1.4M5.8 6.2l1.4-1.4a2.8 2.8 0 0 1 4 4l-1.4 1.4M5.6 10.4l4.8-4.8" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
-                                </svg>
-                                <span class="resource-label">Copy link</span>
-                            </button>
-                        </div>
-                    </div>
+                    <p class="paper-authors">
+                        with
+                        <a href="https://sites.google.com/view/yoonsoolee/" target="_blank" rel="noopener noreferrer" aria-label="Yoonsoo Lee (opens in a new tab)">Yoonsoo Lee</a>
+                    </p>
                 </li>
 
                 <li class="paper-item" id="data-economy-factor-zoo">
                     <h4 class="paper-title">The Data Economy of the Factor Zoo</h4>
-                    <div class="paper-meta">
-                        <p class="paper-authors">Sole author</p>
-                        <div class="paper-permalink">
-                            <button class="resource-link paper-copy-link" type="button" data-copy-target="data-economy-factor-zoo" aria-label="Copy link to The Data Economy of the Factor Zoo" hidden>
-                                <svg class="resource-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
-                                    <path d="M6.2 5.8 4.8 7.2a2.8 2.8 0 0 0 4 4l1.4-1.4M5.8 6.2l1.4-1.4a2.8 2.8 0 0 1 4 4l-1.4 1.4M5.6 10.4l4.8-4.8" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
-                                </svg>
-                                <span class="resource-label">Copy link</span>
-                            </button>
-                        </div>
-                    </div>
+                    <p class="paper-authors">Sole author</p>
                 </li>
             </ul>
         </section>
