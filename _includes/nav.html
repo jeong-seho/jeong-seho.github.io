@@ -5,10 +5,10 @@
         <nav class="nav" aria-label="Primary navigation">
             {% for item in site.nav %}
                 <a href="{{ item.url }}">
-                    {{ item.title }}
+                    <span class="nav-label">{{ item.title }}</span>
                 </a>
             {% endfor %}
-            <a class="nav-cv" href="{{ '/assets/cv/cv.pdf' | relative_url }}" aria-label="Curriculum vitae (PDF)">CV</a>
+            <a class="nav-cv" href="{{ '/assets/cv/cv.pdf' | relative_url }}" aria-label="Curriculum vitae (PDF)"><span class="nav-label">CV</span></a>
         </nav>
     </div>
 </header>

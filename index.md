@@ -32,8 +32,8 @@ permalink: /
         </p>
 
         <nav class="home-links" aria-label="Profile links">
-            <a class="home-link" href="{{ '/assets/cv/cv.pdf' | relative_url }}">CV</a>
-            <a class="home-link" href="https://github.com/jeong-seho">GitHub</a>
+            <a class="home-link" href="{{ '/assets/cv/cv.pdf' | relative_url }}"><span class="home-link-label">CV</span></a>
+            <a class="home-link" href="https://github.com/jeong-seho"><span class="home-link-label">GitHub</span></a>
         </nav>
     </div>
 

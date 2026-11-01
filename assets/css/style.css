@@ -20,6 +20,7 @@
     --border-color: #DCE5EC;
     --link-underline: #6F92A5;
     --link-wave: linear-gradient(90deg, #102B63 0%, #215BD8 25%, #087EA4 50%, #215BD8 75%, #102B63 100%);
+    --interest-wave: linear-gradient(90deg, #EDF4FB 0%, #D5E5FA 25%, #E1F2F8 50%, #D5E5FA 75%, #EDF4FB 100%);
     --paper-text-size: 16px;
     --motion-easing: cubic-bezier(0.2, 0, 0.38, 0.9);
 
@@ -338,7 +339,18 @@ img {
     min-height: 44px;
     font-size: 15px;
     font-weight: 500;
+    text-decoration: none;
+}
+
+.home-link-label {
+    text-decoration: underline;
+    text-decoration-color: var(--link-underline);
+    text-decoration-thickness: 1px;
     text-underline-offset: 5px;
+}
+
+.home-link:is(:hover, :focus-visible) .home-link-label {
+    text-decoration-color: var(--color-primary-hover);
 }
 
 .home-photo-wrap {
@@ -409,6 +421,7 @@ img {
     font-size: 15px;
     font-weight: 500;
     line-height: 1.6;
+    cursor: default;
 }
 
 .education-list {
@@ -535,6 +548,11 @@ img {
     color: var(--text-muted);
     font-size: var(--paper-text-size);
     line-height: 1.7;
+}
+
+.paper-authors a {
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
 }
 
 /* Preliminary projects form a quieter, title-and-coauthor list. */
@@ -686,37 +704,80 @@ img {
     text-wrap: pretty;
 }
 
-/* Color moves through the letters, never the reading layout or icon geometry. */
+/* Text and underline share a wave; tags use a quieter decorative background. */
+
+.home-link-label,
+.paper-authors a,
+.resource-label {
+    --wave-underline: var(--link-wave);
+}
+
+.site-brand,
+.nav-label,
+.home-link-label,
+.paper-authors a,
+.resource-label {
+    --wave-start: 0% 50%, 0% 100%;
+    --wave-end: 200% 50%, 200% 100%;
+}
 
 @keyframes link-wave {
-    from { background-position: 0% 50%; }
-    to { background-position: 200% 50%; }
+    from { background-position: var(--wave-start, 0% 50%); }
+    to { background-position: var(--wave-end, 200% 50%); }
 }
 
 @supports ((background-clip: text) or (-webkit-background-clip: text)) {
-    :is(.site-brand, .nav a, .home-link, .paper-authors a):focus-visible,
+    :is(.site-brand, .paper-authors a):focus-visible,
+    .nav a:focus-visible .nav-label,
+    .home-link:focus-visible .home-link-label,
     .resource-link:not(:disabled):focus-visible .resource-label {
-        background-color: var(--color-primary-hover);
-        background-image: var(--link-wave);
-        background-size: 200% 100%;
-        background-clip: text;
-        -webkit-background-clip: text;
+        background-color: transparent;
+        background-image: var(--link-wave), var(--wave-underline, linear-gradient(transparent, transparent));
+        background-size: 200% 100%, 200% 1px;
+        background-position: var(--wave-start);
+        background-repeat: repeat-x;
+        background-clip: text, padding-box;
+        -webkit-background-clip: text, padding-box;
         -webkit-text-fill-color: transparent;
-        text-decoration-color: var(--color-primary-hover);
+        text-decoration-color: transparent;
     }
 
     @media (hover: hover) and (pointer: fine) {
-        :is(.site-brand, .nav a, .home-link, .paper-authors a):hover,
+        :is(.site-brand, .paper-authors a):hover,
+        .nav a:hover .nav-label,
+        .home-link:hover .home-link-label,
         .resource-link:not(:disabled):hover .resource-label {
-            background-color: var(--color-primary-hover);
-            background-image: var(--link-wave);
-            background-size: 200% 100%;
-            background-clip: text;
-            -webkit-background-clip: text;
+            background-color: transparent;
+            background-image: var(--link-wave), var(--wave-underline, linear-gradient(transparent, transparent));
+            background-size: 200% 100%, 200% 1px;
+            background-position: var(--wave-start);
+            background-repeat: repeat-x;
+            background-clip: text, padding-box;
+            -webkit-background-clip: text, padding-box;
             -webkit-text-fill-color: transparent;
-            text-decoration-color: var(--color-primary-hover);
+            text-decoration-color: transparent;
             animation: link-wave 2s linear infinite;
         }
+    }
+}
+
+.nav:has(a[aria-current="location"]:focus-visible) .nav-indicator {
+    background-image: var(--link-wave);
+    background-size: 200% 100%;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .nav:has(a[aria-current="location"]:hover) .nav-indicator {
+        background-image: var(--link-wave);
+        background-size: 200% 100%;
+        animation: link-wave 2s linear infinite;
+    }
+
+    .interest-list li:hover {
+        background-image: var(--interest-wave);
+        background-size: 200% 100%;
+        background-repeat: repeat-x;
+        animation: link-wave 2s linear infinite;
     }
 }
 
@@ -725,19 +786,36 @@ img {
     color: var(--color-primary-hover);
 }
 
-:is(.site-brand, .nav a, .home-link, .paper-authors a):active,
+:is(.site-brand, .paper-authors a):active,
+.nav a:active .nav-label,
+.home-link:active .home-link-label,
 .resource-link:not(:disabled):active .resource-label {
     -webkit-text-fill-color: currentColor;
+    background-image: none;
+    animation: none;
+    text-decoration-color: currentColor;
+}
+
+.nav:has(a[aria-current="location"]:active) .nav-indicator {
     background-image: none;
     animation: none;
 }
 
 @media (prefers-reduced-motion: reduce), (forced-colors: active) {
-    :is(.site-brand, .nav a, .home-link, .paper-authors a):is(:hover, :focus-visible),
+    :is(.site-brand, .paper-authors a):is(:hover, :focus-visible),
+    .nav a:is(:hover, :focus-visible) .nav-label,
+    .home-link:is(:hover, :focus-visible) .home-link-label,
     .resource-link:not(:disabled):is(:hover, :focus-visible) .resource-label {
         background-image: none;
         background-color: transparent;
         -webkit-text-fill-color: currentColor;
+        animation: none;
+        text-decoration-color: currentColor;
+    }
+
+    .interest-list li:hover,
+    .nav:has(a[aria-current="location"]:is(:hover, :focus-visible)) .nav-indicator {
+        background-image: none;
         animation: none;
     }
 }
@@ -970,10 +1048,16 @@ img {
         overflow: visible !important;
     }
 
-    :is(.site-brand, .nav a, .home-link, .paper-authors a),
+    :is(.site-brand, .nav-label, .home-link-label, .paper-authors a),
     .resource-label {
         background: none !important;
         -webkit-text-fill-color: currentColor !important;
+        animation: none !important;
+        text-decoration-color: currentColor !important;
+    }
+
+    .interest-list li {
+        background-image: none !important;
         animation: none !important;
     }
 

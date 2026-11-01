@@ -113,7 +113,7 @@ if (siteHeader && primaryNav && sectionTargets.length) {
 
     const placeIndicator = (link) => {
         const range = document.createRange();
-        range.selectNodeContents(link);
+        range.selectNodeContents(link.querySelector(".nav-label") || link);
         const textBox = range.getBoundingClientRect();
         const navBox = primaryNav.getBoundingClientRect();
 
